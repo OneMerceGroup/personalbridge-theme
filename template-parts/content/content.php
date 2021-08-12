@@ -12,7 +12,7 @@
 		?>
 	</header><!-- .entry-header -->
 
-	<?php twentynineteen_post_thumbnail(); ?>
+	<?php personalbridge_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -40,7 +40,4 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php twentynineteen_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
