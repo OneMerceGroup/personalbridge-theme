@@ -11,7 +11,7 @@ get_header();
 					<p><?php _e( 'It looks like nothing was found at this location.', 'personalbridge' ); ?></p>
 					<p><?php _e( 'Maybe try a search?', 'personalbridge' ); ?></p>
 					<form role="search" method="get" id="searchform" class="searchform bg-white shadow p-2 flex mt-5" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<input class="w-full rounded p-2" type="text" name="s" id="s" placeholder="Enter your keyword">
+						<input class="w-full p-2 focus:outline-none" type="text" name="s" id="s" placeholder="Enter your keyword">
 						<button class="bg-yellow-500 hover:bg-yellow-600 rounded text-white p-2 pl-4 pr-4" type="submit" id="searchsubmit">
 								<p class="font-semibold text-xs"><?php _e( 'Search?', 'personalbridge' ); ?></p>
 						</button>
