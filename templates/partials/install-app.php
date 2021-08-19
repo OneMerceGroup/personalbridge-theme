@@ -4,19 +4,9 @@
 			<nav class="-mb-px flex space-x-8" aria-label="Tabs">
 				<!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
 				<a href="#" data-tab_id="shopify-app" class="pb-tab-label border-transparent text-indigo-600 border-indigo-600 hover:text-indigo-600 hover:border-indigo-600 group inline-flex items-center py-4 px-1 border-b-2 font-medium text-sm">
-					<svg class="text-gray-400 group-hover:text-indigo-700 -ml-0.5 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"> 
-					<image id="image0" width="20" height="20" x="0" y="0"
-						xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-					AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElN
-					RQflCBMMLRW8bNRBAAABTUlEQVQoz33SsUpcURAG4G9v3NsEElARJY0EU1mkUWJ8gqBgFhMjpMgL
-					pLPJAwQl0byBYLVsZUARbLSyS7Goaa66G9TGStLsEgiKN4XruXfj6plm5v//c/45w5Cd2KyKA01N
-					ByreiXU4b/yS/hd10+2iB77dEt3EkigT3i1Lpb5mphl4ZcGkeZdt0hIFscTT8PaKh/7awSfPAlo3
-					zGzb3femPAc9PuTwGSqh2DLY9sWii8CVIyOB2HZi1KZ93eDCSeBGIgOhONZlw5lVv1vIUeCe5Gbk
-					2CN9znwOSC1kVxyGPnpbE50L9MfAJZFqC2w6N27ZuZdBeBiyamQtGPNK4rFyB+s1YnWp1A9DCvr1
-					5bqO/JFK1RQLmPa9RTT8tGffrlPDxrwwIUbJ+rVg6d6l+JK3WLxnd/IjREntlqjmdacdL5pRlmho
-					SJS9VczIfzz1ujxnenb0AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIxLTA4LTE5VDEyOjQ1OjIxKzAz
-					OjAwFYyV9gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMS0wOC0xOVQxMjo0NToyMSswMzowMGTRLUoA
-					AAAASUVORK5CYII=" />
+					<svg class="text-indigo-700 group-hover:text-indigo-700 -ml-0.5 mr-2 h-5 w-5"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 20 20" height="20px" id="Layer_3" version="1.1" viewBox="0 0 48 48" width="20px" xml:space="preserve" fill="currentColor" aria-hidden="true"><g>
+						<polygon fill-rule="evenodd" clip-rule="evenodd" points="39.979,8.759 35.75,8.759 32.875,5.697 30.875,48.01 45,44.885  "/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M30.229,6.192c-0.159-0.889-0.485-1.646-0.893-2.295c-0.012-0.021-0.019-0.038-0.03-0.061   c-0.93-1.782-2.419-2.309-2.864-2.432c-0.009-0.002-0.017-0.005-0.024-0.008c-0.069-0.018-0.116-0.029-0.116-0.029l0.01,0.012   c-0.38-0.087-0.776-0.113-1.185-0.066c-0.595-0.697-1.414-1.201-2.542-1.304c-4.542-0.417-8.125,6.167-8.125,6.167   s-1.595,3.577-1.902,5.539l-5.744,1.795L3,43.01l26.812,5l2-42.313L30.229,6.192z M24.667,4.343   c0.292,2.708,0.226,3.516,0.226,3.516l-4.828,1.509c0,0,0.435-3.274,2.727-5.066c0.613-0.479,1.168-0.776,1.667-0.952   C24.553,3.638,24.626,3.964,24.667,4.343z M14.53,11.097c0,0,0.512-3.004,1.887-5.004s2.875-3.75,5.333-4.5   C22.141,1.49,22.784,1.5,23.372,1.86c-0.924,0.458-1.832,1.163-2.622,2.024c-2.075,2.261-2.498,6.05-2.498,6.05h0L14.53,11.097   L14.53,11.097z M24.721,18.938l-1.408,3.634c0,0-3.312-1.438-5.188-0.438s-1.062,3.188,0,3.813s3.5,2.25,4.25,3.438   c0.53,0.84,0.864,2.254,0.976,3.377h0.001c0,0,0.897,4.873-4.04,7.561s-9.688-1.812-9.938-2.5c0.75-2.062,1.375-4.062,1.375-4.062   s2.625,2.062,4.312,2s2.555-1.476,1.94-2.562c-0.045-0.08-0.071-0.166-0.087-0.254c-0.168-0.394-0.676-1.235-2.229-2.434   c-2.188-1.688-3.031-4.334-2.737-6.066c0.003-0.017,0.011-0.036,0.014-0.052c0.193-2.832,1.784-5.19,4.66-6.882   c3.188-1.875,8.812-0.312,8.812-0.312L24.721,18.938z M26.668,7.305L26.668,7.305c0,0,0.142-2.156-0.528-4.126   c0.203,0.035,0.373,0.094,0.535,0.154c0.295,0.133,1.003,0.533,1.412,1.446c0.034,0.077,0.066,0.141,0.097,0.196   c0.383,0.801,0.686,1.642,0.686,1.642L26.668,7.305z"/></g>
 					</svg>
 					<span>Shopify</span>
 				</a>
