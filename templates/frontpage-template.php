@@ -59,7 +59,7 @@ get_header();
 		  <div class="flex items-center justify-between w-full md:w-auto">
 			<a href="#">
 			  <span class="sr-only">Workflow</span>
-			  <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
+			  <img class="h-8 w-auto sm:h-10" src="https://p198.p4.n0.cdn.getcloudapp.com/items/mXurb4Dx/1de29d3c-40a1-4368-994e-5a035eea02a7.png" alt="">
 			</a>
 			<div class="-mr-2 flex items-center md:hidden">
 			  <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" @click="toggle" @mousedown="if (open) $event.preventDefault()" aria-expanded="false" :aria-expanded="open.toString()">
@@ -88,7 +88,7 @@ get_header();
 		<div class="hidden md:block text-right">
 		  <span class="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
 			<a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
-			  Log in
+			  Get Started
 			</a>
 		  </span>
 		</div>
@@ -108,7 +108,7 @@ get_header();
 		<div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
 		  <div class="px-5 pt-4 flex items-center justify-between">
 			<div>
-			  <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
+			  <img class="h-8 w-auto" src="https://p198.p4.n0.cdn.getcloudapp.com/items/mXurb4Dx/1de29d3c-40a1-4368-994e-5a035eea02a7.png" alt="">
 			</div>
 			<div class="-mr-2">
 			  <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" @click="toggle">
@@ -145,7 +145,7 @@ get_header();
 			<span class="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">PersonalBridge</span>
 			<span class="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-5xl">
 			  <span class="block text-gray-900">Design, sell, and print </span>
-			  <span class="block text-indigo-600">custom products faster</span>
+			  <span class="block text-indigo-600">personal products faster</span>
 			</span>
 		  </h1>
 		  <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">

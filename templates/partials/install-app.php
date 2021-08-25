@@ -22,9 +22,7 @@
 		</div>
 		<div class="w-full pt-4 pb-tab-contents">
 			<div class="pb-tab-content" data-tab_id="shopify-app">
-				<p class="text-base font-medium text-gray-900">
-					Enter your Shopify domain to install app.
-				</p>
+				
 				<form action="#" method="GET" class="mt-3 sm:flex">
 					<label for="shopify_store_domain" class="sr-only">Your Shopify domain</label>
 					<input type="text" name="shopify_store_domain" id="shopify_store_domain" class="shop-domain block w-full py-3 px-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300" placeholder="https://store_name.myshopify.com" required>
@@ -33,11 +31,12 @@
 					</button>
 				</form>
 				<p class="hidden error-message text-red-700 italic text-sm"></p>
+                <p class="text-sm text-gray-500">
+					Enter your Shopify domain to install PersonalBridge app.
+				</p>
 			</div>
 			<div class="pb-tab-content hidden" data-tab_id="shopbase-app">
-				<p class="text-base font-medium text-gray-900">
-					Enter your Shopbase domain to install app.
-				</p>
+				
 				<form action="#" method="GET" class="mt-3 sm:flex">
 					<label for="shopbase_store_domain" class="sr-only">Your Shopbase domain</label>
 					<input type="text" name="shopbase_store_domain" id="shopbase_store_domain" class="shop-domain block w-full py-3 px-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300" placeholder="https://store_name.onshopbase.com" required>
@@ -46,11 +45,10 @@
 					</button>
 				</form>
 				<p class="hidden error-message text-red-700 italic text-sm"></p>
+                <p class="text-sm text-gray-500">
+					Enter your Shopbase domain to install PersonalBridge app.
+				</p>
 			</div>
 		</div>
 	</div>
-	<p class="mt-3 text-sm text-gray-500">
-		We care about the protection of your data. Read our
-		<a href="#" class="font-medium text-gray-900 underline">Privacy Policy</a>.
-	</p>
 </div>
