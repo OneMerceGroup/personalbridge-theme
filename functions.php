@@ -49,4 +49,7 @@ function personalbridge_head() {
 		<style>.st0{fill:#fff}.st1{fill:#b5dfea}.st2{opacity:.55;fill:#90cedd}.st3{fill:#d7f0f9}.st4{fill:#0582c1}.st5{fill:#79c9e8}.st6{fill:#ffbf4d}.st7{fill:#00668e}.st8{fill:#05556d}.st9{fill:#f98d3d}.st10{fill:#ed701b}.st11{fill:none}.st12{fill:#efaa3a}.st13{opacity:.29;fill:#f98d2b}.st14{fill:#49b4d6}.st15{fill:#ff9f50}.st16{fill:#f77e2d}.st17{opacity:.55;fill:url(#SVGID_1_)}</style>
 		<?php
 	}
+	?>
+	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9bbf87c9-d49e-4134-a647-6a3ce8ea13e9";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+	<?php
 }
