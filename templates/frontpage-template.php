@@ -7,38 +7,6 @@
 get_header();
 ?>
 
-<!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-	// ...
-	plugins: [
-	  // ...
-	  require('@tailwindcss/forms'),
-	],
-  }
-  ```
--->
-<!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-	// ...
-	plugins: [
-	  // ...
-	  require('@tailwindcss/forms'),
-	],
-  }
-  ```
--->
 <div class="relative bg-gray-50 overflow-hidden">
   <div class="hidden lg:block lg:absolute lg:inset-0" aria-hidden="true">
 	<svg class="absolute top-0 left-1/2 transform translate-x-64 -translate-y-8" width="640" height="784" fill="none" viewBox="0 0 640 784">
@@ -57,8 +25,8 @@ get_header();
 	  <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
 		<div class="flex items-center flex-1">
 		  <div class="flex items-center justify-between w-full md:w-auto">
-			<a href="#">
-			  <span class="sr-only">Workflow</span>
+			<a href="<?php echo esc_url( home_url('/') ); ?>">
+			  <span class="sr-only">PersonalBridge</span>
 			  <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
 			</a>
 			<div class="-mr-2 flex items-center md:hidden">
@@ -72,38 +40,28 @@ get_header();
 			</div>
 		  </div>
 		  <div class="hidden md:block md:ml-10 md:space-x-10">
-			<a href="#" class="font-medium text-gray-900 hover:text-gray-900">Home</a>
+			<a href="<?php echo esc_url( home_url('/') ); ?>" class="font-medium text-gray-900 hover:text-gray-900">Home</a>
 
-			<a href="#" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
+			<a href="#features" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
 
-			<a href="#" class="font-medium text-gray-500 hover:text-gray-900">Demos</a>
+			<a href="https://personalbridge.myshopify.com/" class="font-medium text-gray-500 hover:text-gray-900">Demos</a>
 
-			<a href="#" class="font-medium text-gray-500 hover:text-gray-900">Pricing</a>
+			<a href="#pricing" class="font-medium text-gray-500 hover:text-gray-900">Pricing</a>
 
-			<a href="#" class="font-medium text-gray-500 hover:text-gray-900">Partners</a>
+			<a href="#partners" class="font-medium text-gray-500 hover:text-gray-900">Partners</a>
 
-            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Helps</a>
+            <a href="https://support.personalbridge.com" class="font-medium text-gray-500 hover:text-gray-900">Helps</a>
 		  </div>
 		</div>
 		<div class="hidden md:block text-right">
 		  <span class="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
-			<a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
+			<a href="https://dashboard.personalbridge.com" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
 			  Log in
 			</a>
 		  </span>
 		</div>
 	  </nav>
 
-	  <!--
-		Mobile menu, show/hide based on menu open state.
-
-		Entering: "duration-150 ease-out"
-		  From: "opacity-0 scale-95"
-		  To: "opacity-100 scale-100"
-		Leaving: "duration-100 ease-in"
-		  From: "opacity-100 scale-100"
-		  To: "opacity-0 scale-95"
-	  -->
 	  <div x-show="open" x-transition:enter="duration-150 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" x-description="Mobile menu, show/hide based on menu open state." class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden" x-ref="panel" @click.away="open = false" style="display: none;">
 		<div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
 		  <div class="px-5 pt-4 flex items-center justify-between">
@@ -121,17 +79,17 @@ get_header();
 			</div>
 		  </div>
 		  <div class="px-2 pt-2 pb-3 space-y-1">
-			<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
+			<a href="<?php echo esc_url( home_url('/') ); ?>" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
 
-			<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
+			<a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
 
-			<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Demos</a>
+			<a href="https://personalbridge.myshopify.com/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Demos</a>
 
-			<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Pricing</a>
-			<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Partners</a>
-			<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Helps</a>
+			<a href="#pricing" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Pricing</a>
+			<a href="#partners" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Partners</a>
+			<a href="https://support.personalbridge.com" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Helps</a>
 		  </div>
-		  <a href="#" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
+		  <a href="https://dashboard.personalbridge.com" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
 			Log in
 		  </a>
 		</div>
@@ -184,7 +142,7 @@ get_header();
 
 <!-- Partners -->
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="bg-white">
+<div class="bg-white" id="partners">
   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
     <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
       <div>
@@ -235,7 +193,7 @@ get_header();
 <!-- Pricing -->
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="bg-gray-100">
+<div class="bg-gray-100" id="pricing">
   <div class="pt-12 sm:pt-16 lg:pt-20">
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 	  <div class="text-center">
