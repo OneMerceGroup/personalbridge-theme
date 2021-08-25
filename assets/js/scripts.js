@@ -68,5 +68,15 @@
 				}
 			} 
 		});
+
+		$(document).on('click', 'a[href^="#"]', function(e){
+			e.preventDefault();
+			var targetId = $(this).attr('href'); // $.attr(this, 'href')
+			if ( $(targetId).length > 0 ) {
+				$('html, body').animate({
+					scrollTop: $(targetId).offset().top
+				}, 650);
+			}
+		});
 	});
 })(jQuery);

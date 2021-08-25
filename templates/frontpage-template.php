@@ -21,11 +21,11 @@ get_header();
   </div>
 
   <div class="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
-  	<div x-data="Components.popover({ open: false, focus: true })" x-init="init()" @keydown.escape="onEscape" @close-popover-group.window="onClosePopoverGroup">
+	  <div x-data="Components.popover({ open: false, focus: true })" x-init="init()" @keydown.escape="onEscape" @close-popover-group.window="onClosePopoverGroup">
 	  <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
 		<div class="flex items-center flex-1">
 		  <div class="flex items-center justify-between w-full md:w-auto">
-			<a href="<?php echo esc_url( home_url('/') ); ?>">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 			  <span class="sr-only">PersonalBridge</span>
 			  <img class="h-8 w-auto sm:h-10" src="https://p198.p4.n0.cdn.getcloudapp.com/items/mXurb4Dx/1de29d3c-40a1-4368-994e-5a035eea02a7.png" alt="">
 			</a>
@@ -40,7 +40,7 @@ get_header();
 			</div>
 		  </div>
 		  <div class="hidden md:block md:ml-10 md:space-x-10">
-			<a href="<?php echo esc_url( home_url('/') ); ?>" class="font-medium text-gray-900 hover:text-gray-900">Home</a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="font-medium text-gray-900 hover:text-gray-900">Home</a>
 
 			<a href="#features" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
 
@@ -50,7 +50,7 @@ get_header();
 
 			<a href="#partners" class="font-medium text-gray-500 hover:text-gray-900">Partners</a>
 
-            <a href="https://support.personalbridge.com" class="font-medium text-gray-500 hover:text-gray-900">Helps</a>
+			<a href="https://support.personalbridge.com" class="font-medium text-gray-500 hover:text-gray-900">Helps</a>
 		  </div>
 		</div>
 		<div class="hidden md:block text-right">
@@ -79,7 +79,7 @@ get_header();
 			</div>
 		  </div>
 		  <div class="px-2 pt-2 pb-3 space-y-1">
-			<a href="<?php echo esc_url( home_url('/') ); ?>" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
 
 			<a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
 
@@ -107,7 +107,7 @@ get_header();
 			</span>
 		  </h1>
 		  <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-          Making better ecommerce user experience with the best tools for personalized products.
+		  Making better ecommerce user experience with the best tools for personalized products.
 		  </p>
 		  <?php get_template_part( 'templates/partials/install', 'app' ); ?>
 		  
@@ -140,52 +140,246 @@ get_header();
   </div>
 </div>
 
+<!-- Features -->
+<div class="py-16 bg-indigo-50 overflow-hidden lg:py-24" id="features">
+  <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
+  <svg class="hidden lg:block absolute top-0 left-1/2 transform translate-x-64 -translate-y-20" width="640" height="784" fill="none" viewBox="0 0 640 784" aria-hidden="true">
+	  <defs>
+		<pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+		  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+		</pattern>
+	  </defs>
+	  <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
+	</svg>
+
+	<div class="relative">
+	  <h2 class="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+	  Customers design — and buy! — personalized products from your store
+	  </h2>
+	  <p class="mt-4 max-w-4xl mx-auto text-center text-xl text-gray-500">
+	  Let's customers personalize any product and visualize how they’ll look before checking out. PersonalBridge automates your work by integrating with your favorite services: CustomCat, Gearment, Dreamship, ScalablePress, Merchize.
+	  </p>
+	</div>
+
+	<div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+		<?php
+			$first_group_features = array(
+				'label'    => 'Unlimited Customization',
+				'desc'     => 'Add unlimited customization options, conditional logic, personalized campaigns, powerful & easy to use interface',
+				'image'    => 'https://tailwindui.com/img/features/feature-example-1.png',
+				'features' => array(
+					array(
+						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+						</svg>',
+						'label' => 'Upload cliparts from folder',
+						'desc'  => 'Upload and manage settings of all clipart images easily and quickly with uploading nested folders.',
+					),
+					array(
+						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+						</svg>',
+						'label' => 'Create mockup from PSD',
+						'desc'  => 'Create your own mockup quickly by importing PSD files. Easily edit and display artwork on product mockup in your own style.',
+					),
+					array(
+						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+						</svg>',
+						'label' => 'Artwork Templates from PSD',
+						'desc'  => 'Powerful artwork editor to help you create design and manage personalization settings. Re-use artwork for multiple POD products and campaigns. Automatically create templates based on PSD file structure.',
+					),
+					array(
+						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+						</svg>',
+						'label' => 'Auto fulfill with fulfillment services',
+						'desc'  => 'Automate fulfillment with your favorite fulfillments. Automatic create file design file base on the selection of your customer. You can download file print or automatically send orders to your fulfillment service.',
+					),
+					array(
+						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+						</svg>',
+						'label' => 'Create your own product catalog',
+						'desc'  => 'Import product catalog from your favorite provider with just one click or add product catalog from any provider manually with no limitation;',
+					),
+				),
+			);
+			?>
+	  <div class="relative">
+		<h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+		
+		<?php echo $first_group_features['label']; ?>
+		</h3>
+		<p class="mt-3 text-lg text-gray-500">
+		<?php echo $first_group_features['desc']; ?>
+		
+		</p>
+
+		<dl class="mt-10 space-y-10">
+			<?php if ( isset( $first_group_features['features'] ) && ! empty( $first_group_features['features'] ) ) { ?>
+				<?php foreach ( $first_group_features['features'] as $first_feature ) { ?>
+					<div class="relative">
+						<dt>
+						<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+							<!-- Heroicon name: outline/globe-alt -->
+							<?php echo $first_feature['icon']; ?>
+						</div>
+						<p class="ml-16 text-lg leading-6 font-medium text-gray-900"><?php echo $first_feature['label']; ?></p>
+						</dt>
+						<dd class="mt-2 ml-16 text-base text-gray-500">
+						<?php echo $first_feature['desc']; ?>
+						</dd>
+					</div>
+				<?php } ?>
+			<?php } ?>
+		</dl>
+	  </div>
+
+	  <div class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+		<svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404">
+		  <defs>
+			<pattern id="ca9667ae-9f92-4be7-abcb-9e3d727f2941" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+			  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+			</pattern>
+		  </defs>
+		  <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
+		</svg>
+		<img class="relative mx-auto" width="490" src="<?php echo $first_group_features['image']; ?>" alt="">
+	  </div>
+	</div>
+
+	<svg class="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12" width="404" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
+	  <defs>
+		<pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+		  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+		</pattern>
+	  </defs>
+	  <rect width="404" height="784" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
+	</svg>
+
+	<div class="relative mt-12 sm:mt-16 lg:mt-24">
+		<?php
+			$second_group_features = array(
+				'label'    => 'Empower Your Customers',
+				'desc'     => 'Let your customers customize your products. Allow them to visualize the final product before placing an order',
+				'image'    => 'https://tailwindui.com/img/features/feature-example-2.png',
+				'features' => array(
+					array(
+						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+						</svg>',
+						'label' => 'Customizations',
+						'desc'  => 'Customers changes clipart, enter text or can upload their own images and use them to create uniquely personal products. Your customer only need change and buy.',
+					),
+					array(
+						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+						</svg>',
+						'label' => 'Conditional Logic',
+						'desc'  => 'Conditional logic lets you show and hide options depending on the value of previous options.',
+					),
+					array(
+						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+						</svg>',
+						'label' => 'Live Preview',
+						'desc'  => 'PersonalBridge allows you to configure a live preview image that will automatically get updated when your customers will change their selection.',
+					),
+				),
+			);
+			?>
+	  <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
+		<div class="lg:col-start-2">
+		  <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+			<?php echo $second_group_features['label']; ?>
+		  </h3>
+		  <p class="mt-3 text-lg text-gray-500">
+			<?php echo $second_group_features['desc']; ?>
+		  </p>
+
+		  <dl class="mt-10 space-y-10">
+			<?php if ( isset( $second_group_features['features'] ) && ! empty( $second_group_features['features'] ) ) { ?>
+				<?php foreach ( $second_group_features['features'] as $second_feature ) { ?>
+					<div class="relative">
+						<dt>
+							<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+							<!-- Heroicon name: outline/annotation -->
+							<?php echo $second_feature['icon']; ?>
+							</div>
+							<p class="ml-16 text-lg leading-6 font-medium text-gray-900"><?php echo $second_feature['label']; ?></p>
+						</dt>
+						<dd class="mt-2 ml-16 text-base text-gray-500">
+						<?php echo $second_feature['desc']; ?>
+						</dd>
+					</div>
+				<?php } ?>
+			<?php } ?>
+		  </dl>
+		</div>
+
+		<div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
+		  <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404" aria-hidden="true">
+			<defs>
+			  <pattern id="e80155a9-dfde-425a-b5ea-1f6fadd20131" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+				<rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+			  </pattern>
+			</defs>
+			<rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
+		  </svg>
+		  <img class="relative mx-auto" width="490" src="<?php echo esc_url( $second_group_features['image'] ); ?>" alt="">
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+
 <!-- Partners -->
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="bg-white" id="partners">
   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-    <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-      <div>
-        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Automatic Fulfillment Partners
-        </h2>
-        <p class="mt-3 max-w-3xl text-lg text-gray-500">
-        Automatic send orders with ready to print files to your fulfillment service and update tracking order to your store.
-        </p>
-        <div class="mt-8 sm:flex">
-          <div class="rounded-md shadow">
-            <a href="#" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
-              Create Account
-            </a>
-          </div>
-          <div class="mt-3 sm:mt-0 sm:ml-3">
-            <a href="#" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200">
-              Contact Us
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
-        <div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-          <img class="max-w-12" src="https://customcat.com/wp-content/uploads/2020/08/CC_Logo_2020_Horizontal_EYS-e1598347452413.png" alt="Workcation">
-        </div>
-        <div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-          <img class="max-w-12" src="https://cdn2.hubspot.net/hub/3942223/hubfs/Scalable%20Press%20November2017/image/scalablepress_logo-Scalable-Black.png" alt="Mirage">
-        </div>
-        <div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-          <img class="" src="https://gearment.com/gearment/themes/gearment/assets/images/logo_gearment.png" alt="Tuple">
-        </div>
-        <div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-          <img class="max-w-12" src="https://merchize.com/wp-content/uploads/2021/04/logo_retina.png" alt="Laravel">
-        </div>
-        <div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-          <img class="max-w-12" src="https://assets.inkgo.io/img/logo/dreamship.svg" alt="StaticKit">
-        </div>
-        <div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-          <div class="text-sm text-gray-500">More coming soon!</div>
-        </div>
-      </div>
-    </div>
+	<div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+	  <div>
+		<h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+			Automatic Fulfillment Partners
+		</h2>
+		<p class="mt-3 max-w-3xl text-lg text-gray-500">
+		Automatic send orders with ready to print files to your fulfillment service and update tracking order to your store.
+		</p>
+		<div class="mt-8 sm:flex">
+		  <div class="rounded-md shadow">
+			<a href="#" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+			  Create Account
+			</a>
+		  </div>
+		  <div class="mt-3 sm:mt-0 sm:ml-3">
+			<a href="#" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200">
+			  Contact Us
+			</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
+		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
+		  <img class="max-w-12" src="https://customcat.com/wp-content/uploads/2020/08/CC_Logo_2020_Horizontal_EYS-e1598347452413.png" alt="Workcation">
+		</div>
+		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
+		  <img class="max-w-12" src="https://cdn2.hubspot.net/hub/3942223/hubfs/Scalable%20Press%20November2017/image/scalablepress_logo-Scalable-Black.png" alt="Mirage">
+		</div>
+		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
+		  <img class="" src="https://gearment.com/gearment/themes/gearment/assets/images/logo_gearment.png" alt="Tuple">
+		</div>
+		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
+		  <img class="max-w-12" src="https://merchize.com/wp-content/uploads/2021/04/logo_retina.png" alt="Laravel">
+		</div>
+		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
+		  <img class="max-w-12" src="https://assets.inkgo.io/img/logo/dreamship.svg" alt="StaticKit">
+		</div>
+		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
+		  <div class="text-sm text-gray-500">More coming soon!</div>
+		</div>
+	  </div>
+	</div>
   </div>
 </div>
 
@@ -213,10 +407,10 @@ get_header();
 		<div class="max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
 		  <div class="flex-1 bg-white px-6 py-8 lg:p-12">
 			<h3 class="text-2xl font-extrabold text-gray-900 sm:text-3xl">
-                PAY AS YOU GO
+				PAY AS YOU GO
 			</h3>
 			<p class="mt-6 text-base text-gray-500">
-                Simple usage based pricing with no long term commitments.
+				Simple usage based pricing with no long term commitments.
 			</p>
 			<div class="mt-8">
 			  <div class="flex items-center">
@@ -231,7 +425,7 @@ get_header();
 					</svg>
 				  </div>
 				  <p class="ml-3 text-sm text-gray-700">
-                    14 day free trial
+					14 day free trial
 				  </p>
 				</li>
 
@@ -243,7 +437,7 @@ get_header();
 					</svg>
 				  </div>
 				  <p class="ml-3 text-sm text-gray-700">
-                    Unlimited product previews
+					Unlimited product previews
 				  </p>
 				</li>
 
@@ -255,7 +449,7 @@ get_header();
 					</svg>
 				  </div>
 				  <p class="ml-3 text-sm text-gray-700">
-                    Unlimited ready to print file exports or API
+					Unlimited ready to print file exports or API
 				  </p>
 				</li>
 
@@ -267,11 +461,11 @@ get_header();
 					</svg>
 				  </div>
 				  <p class="ml-3 text-sm text-gray-700">
-                    Unlimited number of stores
+					Unlimited number of stores
 				  </p>
 				</li>
 
-                <li class="flex items-start lg:col-span-1">
+				<li class="flex items-start lg:col-span-1">
 				  <div class="flex-shrink-0">
 					<!-- Heroicon name: solid/check-circle -->
 					<svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -279,11 +473,11 @@ get_header();
 					</svg>
 				  </div>
 				  <p class="ml-3 text-sm text-gray-700">
-                    Unlimited number of stores
+					Unlimited number of stores
 				  </p>
 				</li>
 
-                <li class="flex items-start lg:col-span-1">
+				<li class="flex items-start lg:col-span-1">
 				  <div class="flex-shrink-0">
 					<!-- Heroicon name: solid/check-circle -->
 					<svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -291,7 +485,7 @@ get_header();
 					</svg>
 				  </div>
 				  <p class="ml-3 text-sm text-gray-700">
-                    Unlimited number of stores
+					Unlimited number of stores
 				  </p>
 				</li>
 
@@ -309,10 +503,10 @@ get_header();
 			  </span>
 			</div>
 			<p class="mt-4 text-sm font-medium">Plus transaction fee:</p>
-            <p class="mt-2 text-sm text-gray-500">Free transaction fee for first 20 orders</p>
-            <p class="mt-2 text-sm text-gray-500">$0.4 transaction fee up to 1.000 orders</p>
-            <p class="mt-2 text-sm text-gray-500">$0.2 transaction fee up to 5.000 orders</p>
-            <p class="mt-2 text-sm text-gray-500">$0.1 transaction fee from 5.000 and above.</p>
+			<p class="mt-2 text-sm text-gray-500">Free transaction fee for first 20 orders</p>
+			<p class="mt-2 text-sm text-gray-500">$0.4 transaction fee up to 1.000 orders</p>
+			<p class="mt-2 text-sm text-gray-500">$0.2 transaction fee up to 5.000 orders</p>
+			<p class="mt-2 text-sm text-gray-500">$0.1 transaction fee from 5.000 and above.</p>
 			<div class="mt-6">
 			  <div class="rounded-md shadow">
 				<a href="#" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900">
@@ -337,47 +531,67 @@ get_header();
 				Frequently asked questions
 			</h2>
 			<dl class="mt-6 space-y-6 divide-y divide-gray-200">
-				<div x-data="{ open: true }" class="pt-6">
-					<dt class="text-lg">
-						<button type="button" x-description="Expand/collapse question button" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" @click="open = !open" aria-expanded="false" x-bind:aria-expanded="open.toString()">
-							<span class="font-medium text-gray-900">
-							What's the best thing about Switzerland?
-							</span>
-							<span class="ml-6 h-7 flex items-center">
-								<svg class="h-6 w-6 transform rotate-0" x-description="Expand/collapse icon, toggle classes based on question open state.
-									Heroicon name: outline/chevron-down" x-state:on="Open" x-state:off="Closed" :class="{ '-rotate-180': open, 'rotate-0': !(open) }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-								</svg>
-							</span>
-						</button>
-					</dt>
-					<dd class="mt-2 pr-12" id="faq-0" x-show="open" style="display: none;">
-						<p class="text-base text-gray-500">
-							I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-						</p>
-					</dd>
-				</div>
-				<div x-data="{ open: false }" class="pt-6">
-					<dt class="text-lg">
-						<button type="button" x-description="Expand/collapse question button" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-1" @click="open = !open" aria-expanded="false" x-bind:aria-expanded="open.toString()">
-							<span class="font-medium text-gray-900">
-							How do you make holy water?
-							</span>
-							<span class="ml-6 h-7 flex items-center">
-								<svg class="rotate-0 h-6 w-6 transform" x-description="Expand/collapse icon, toggle classes based on question open state.
-									Heroicon name: outline/chevron-down" x-state:on="Open" x-state:off="Closed" :class="{ '-rotate-180': open, 'rotate-0': !(open) }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-								</svg>
-							</span>
-						</button>
-					</dt>
-					<dd class="mt-2 pr-12" id="faq-1" x-show="open" style="display: none;">
-						<p class="text-base text-gray-500">
-							You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut tempora vitae odio inventore fuga aliquam nostrum quod porro. Delectus quia facere id sequi expedita natus.
-						</p>
-					</dd>
-				</div>
-				
+			<?php
+				$faqs = array(
+					array(
+						'question' => 'What is PersonalBridge?',
+						'answer'   => "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+					),
+					array(
+						'question' => 'How can I add PersonalBridge to my e-commerce store?',
+						'answer'   => 'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut tempora vitae odio inventore fuga aliquam nostrum quod porro. Delectus quia facere id sequi expedita natus.',
+					),
+					array(
+						'question' => 'What are the payment options?',
+						'answer'   => 'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut tempora vitae odio inventore fuga aliquam nostrum quod porro. Delectus quia facere id sequi expedita natus.',
+					),
+					array(
+						'question' => 'Do all plans include support?',
+						'answer'   => 'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut tempora vitae odio inventore fuga aliquam nostrum quod porro. Delectus quia facere id sequi expedita natus.',
+					),
+					array(
+						'question' => 'Can my customers add their own pictures to my products?',
+						'answer'   => 'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut tempora vitae odio inventore fuga aliquam nostrum quod porro. Delectus quia facere id sequi expedita natus.',
+					),
+					array(
+						'question' => 'What kind of support do you offer?',
+						'answer'   => 'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut tempora vitae odio inventore fuga aliquam nostrum quod porro. Delectus quia facere id sequi expedita natus.',
+					),
+				);
+
+				foreach ( $faqs as $index => $faq ) {
+					$open_var = 'false';
+					if ( 0 == $index ) {
+						$open_var = 'true';
+					}
+					?>
+					<div x-data="{ open: <?php echo esc_attr( $open_var ); ?> }" class="pt-6">
+						<dt class="text-lg">
+							<button type="button" x-description="Expand/collapse question button" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-<?php echo esc_attr( $index ); ?>" @click="open = !open" aria-expanded="false" x-bind:aria-expanded="open.toString()">
+								<?php if ( isset( $faq['question'] ) && ! empty( $faq['question'] ) ) { ?>	
+									<span class="font-medium text-gray-900">
+									<?php echo $faq['question']; ?>
+									</span>
+								<?php } ?>
+								<span class="ml-6 h-7 flex items-center">
+									<svg class="h-6 w-6 transform rotate-0" x-description="Expand/collapse icon, toggle classes based on question open state.
+										Heroicon name: outline/chevron-down" x-state:on="Open" x-state:off="Closed" :class="{ '-rotate-180': open, 'rotate-0': !(open) }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+									</svg>
+								</span>
+							</button>
+						</dt>
+						<dd class="mt-2 pr-12" id="faq-<?php echo esc_attr( $index ); ?>" x-show="open" style="display: none;">
+							<?php if ( isset( $faq['answer'] ) && ! empty( $faq['answer'] ) ) { ?>		
+							<p class="text-base text-gray-500">
+								<?php echo $faq['answer']; ?>
+							</p>
+							<?php } ?>
+						</dd>
+					</div>
+					<?php
+				}
+				?>
 			</dl>
 		</div>
 	</div>
@@ -399,69 +613,40 @@ get_header();
 		  <a href="#" class="text-gray-400 hover:text-gray-500">
 			<span class="sr-only">Facebook Fanpage</span>
 			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                <title>fb 3@1x</title>
-                <g id="FBPage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="FBPage-1" transform="translate(-1041.000000, -8376.000000)">
-                        <g id="fbp" transform="translate(1041.000000, 8376.000000)" >
-                            <rect id="Rectangle" x="0" y="9.09494702e-13" width="24" height="24"/>
-                            <path d="M9.03153,23 L9,13 L5,13 L5,9 L9,9 L9,6.5 C9,2.7886 11.29832,1 14.60914,1 C16.19506,1 17.55807,1.11807 17.95529,1.17085 L17.95529,5.04948 L15.65906,5.05052 C13.85845,5.05052 13.50981,5.90614 13.50981,7.16171 L13.50981,9 L18.75,9 L16.75,13 L13.50981,13 L13.50981,23 L9.03153,23 Z" id="Icon-Color" fill="currentColor" fill-rule="nonzero"/>
-                        </g>
-                    </g>
-                </g>
-            </svg>
+				<title>fb 3@1x</title>
+				<g id="FBPage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+					<g id="FBPage-1" transform="translate(-1041.000000, -8376.000000)">
+						<g id="fbp" transform="translate(1041.000000, 8376.000000)" >
+							<rect id="Rectangle" x="0" y="9.09494702e-13" width="24" height="24"/>
+							<path d="M9.03153,23 L9,13 L5,13 L5,9 L9,9 L9,6.5 C9,2.7886 11.29832,1 14.60914,1 C16.19506,1 17.55807,1.11807 17.95529,1.17085 L17.95529,5.04948 L15.65906,5.05052 C13.85845,5.05052 13.50981,5.90614 13.50981,7.16171 L13.50981,9 L18.75,9 L16.75,13 L13.50981,13 L13.50981,23 L9.03153,23 Z" id="Icon-Color" fill="currentColor" fill-rule="nonzero"/>
+						</g>
+					</g>
+				</g>
+			</svg>
 		  </a>
 
-          <a href="#" class="text-gray-400 hover:text-gray-500">
+		  <a href="#" class="text-gray-400 hover:text-gray-500">
 			<span class="sr-only">Facebook Local Group</span>
 			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="22px" viewBox="0 0 19 22" version="1.1">
-                <title>fb 2@1x</title>
-                <g id="FBGroup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="FBGroup-1" transform="translate(-1115.000000, -8377.000000)" fill="currentColor" fill-rule="nonzero">
-                        <g id="fbg" transform="translate(1115.000000, 8377.000000)">
-                            <path d="M9.60914,0 C11.19506,0 12.55807,0.11807 12.95529,0.17085 L12.95529,4.04948 L10.65906,4.05052 C8.85845,4.05052 8.50981,4.90614 8.50981,6.16171 L8.50981,8 L13.75,8 C11.6541226,8.3228287 9.9873171,9.9354396 9.5901688,11.9998246 L8.50981,12 L8.50981,22 L4.03153,22 L4,12 L0,12 L0,8 L4,8 L4,5.5 C4,1.7886 6.29832,0 9.60914,0 Z M19,20.5 L19,22 L10,22 L10,20.5 L19,20.5 Z M14.5,9.45 C16.4329966,9.45 18,11.0170034 18,12.95 C18,14.6252637 16.8230064,16.0256259 15.2508322,16.3692733 L15.25,19.5 L13.75,19.5 L13.7501592,16.3694899 C12.1774884,16.0262145 11,14.6256158 11,12.95 C11,11.0170034 12.5670034,9.45 14.5,9.45 Z" id="Shape"/>
-                        </g>
-                    </g>
-                </g>
-            </svg>
+				<title>fb 2@1x</title>
+				<g id="FBGroup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+					<g id="FBGroup-1" transform="translate(-1115.000000, -8377.000000)" fill="currentColor" fill-rule="nonzero">
+						<g id="fbg" transform="translate(1115.000000, 8377.000000)">
+							<path d="M9.60914,0 C11.19506,0 12.55807,0.11807 12.95529,0.17085 L12.95529,4.04948 L10.65906,4.05052 C8.85845,4.05052 8.50981,4.90614 8.50981,6.16171 L8.50981,8 L13.75,8 C11.6541226,8.3228287 9.9873171,9.9354396 9.5901688,11.9998246 L8.50981,12 L8.50981,22 L4.03153,22 L4,12 L0,12 L0,8 L4,8 L4,5.5 C4,1.7886 6.29832,0 9.60914,0 Z M19,20.5 L19,22 L10,22 L10,20.5 L19,20.5 Z M14.5,9.45 C16.4329966,9.45 18,11.0170034 18,12.95 C18,14.6252637 16.8230064,16.0256259 15.2508322,16.3692733 L15.25,19.5 L13.75,19.5 L13.7501592,16.3694899 C12.1774884,16.0262145 11,14.6256158 11,12.95 C11,11.0170034 12.5670034,9.45 14.5,9.45 Z" id="Shape"/>
+						</g>
+					</g>
+				</g>
+			</svg>
 		  </a>
 
 		</div>
 	  </div>
 	  <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-		<div class="md:grid md:grid-cols-2 md:gap-8">
-		  <div>
-			<h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-			  Solutions
-			</h3>
-			<ul role="list" class="mt-4 space-y-4">
-			  <li>
-				<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-				  Marketing
-				</a>
-			  </li>
-
-			  <li>
-				<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-				  Analytics
-				</a>
-			  </li>
-
-			  <li>
-				<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-				  Commerce
-				</a>
-			  </li>
-
-			  <li>
-				<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-				  Insights
-				</a>
-			  </li>
-			</ul>
-		  </div>
+		<div class="md:grid md:grid-cols-1 md:gap-8">
+		 
 		  <div class="mt-12 md:mt-0">
 			<h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-			  Support
+			  Demos
 			</h3>
 			<ul role="list" class="mt-4 space-y-4">
 			  <li>
@@ -490,43 +675,8 @@ get_header();
 			</ul>
 		  </div>
 		</div>
-		<div class="md:grid md:grid-cols-2 md:gap-8">
-		  <div>
-			<h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-			  Company
-			</h3>
-			<ul role="list" class="mt-4 space-y-4">
-			  <li>
-				<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-				  About
-				</a>
-			  </li>
-
-			  <li>
-				<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-				  Blog
-				</a>
-			  </li>
-
-			  <li>
-				<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-				  Jobs
-				</a>
-			  </li>
-
-			  <li>
-				<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-				  Press
-				</a>
-			  </li>
-
-			  <li>
-				<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-				  Partners
-				</a>
-			  </li>
-			</ul>
-		  </div>
+		<div class="md:grid md:grid-cols-1 md:gap-8">
+		  
 		  <div class="mt-12 md:mt-0">
 			<h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
 			  Legal
