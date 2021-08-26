@@ -44,19 +44,19 @@ get_header();
 
 			<a href="#features" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
 
-			<a href="https://personalbridge.myshopify.com/" class="font-medium text-gray-500 hover:text-gray-900">Demos</a>
+			<a href="https://personalbridge.myshopify.com/" target="_blank" class="font-medium text-gray-500 hover:text-gray-900">Demos</a>
 
 			<a href="#pricing" class="font-medium text-gray-500 hover:text-gray-900">Pricing</a>
 
 			<a href="#partners" class="font-medium text-gray-500 hover:text-gray-900">Partners</a>
 
-			<a href="https://support.personalbridge.com" class="font-medium text-gray-500 hover:text-gray-900">Helps</a>
+			<a href="https://support.personalbridge.com" target="_blank" class="font-medium text-gray-500 hover:text-gray-900">Helps</a>
 		  </div>
 		</div>
 		<div class="hidden md:block text-right">
 		  <span class="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
-			<a href="https://dashboard.personalbridge.com" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
-            Get Started
+			<a href="https://dashboard.personalbridge.com" target="_blank" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
+			Get Started
 			</a>
 		  </span>
 		</div>
@@ -83,14 +83,14 @@ get_header();
 
 			<a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
 
-			<a href="https://personalbridge.myshopify.com/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Demos</a>
+			<a href="https://personalbridge.myshopify.com/" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Demos</a>
 
 			<a href="#pricing" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Pricing</a>
 			<a href="#partners" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Partners</a>
-			<a href="https://support.personalbridge.com" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Helps</a>
+			<a href="https://support.personalbridge.com" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Helps</a>
 		  </div>
-		  <a href="https://dashboard.personalbridge.com" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
-			Log in
+		  <a href="https://dashboard.personalbridge.com" target="_blank" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
+		  Get Started
 		  </a>
 		</div>
 	  </div>
@@ -154,10 +154,10 @@ get_header();
 
 	<div class="relative">
 	  <h2 class="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-	  Customers design — and buy! — personalized products from your store
+	  Customers design — And buy! — Personalized products from your store
 	  </h2>
 	  <p class="mt-4 max-w-4xl mx-auto text-center text-xl text-gray-500">
-	  Let's customers personalize any product and visualize how they’ll look before checking out. PersonalBridge automates your work by integrating with your favorite services: CustomCat, Gearment, Dreamship, ScalablePress, Merchize.
+	  Let's customers personalize any product and visualize how they’ll look before checking out. PersonalBridge automates your work by integrating with your favorite fulfillment services: CustomCat, Gearment, Dreamship, ScalablePress, Merchize.
 	  </p>
 	</div>
 
@@ -165,7 +165,7 @@ get_header();
 		<?php
 			$first_group_features = array(
 				'label'    => 'Unlimited Customization',
-				'desc'     => 'Add unlimited customization options, conditional logic, personalized campaigns, powerful & easy to use interface',
+				'desc'     => 'Add unlimited customization options, conditional logic, personalized campaigns, powerful & easy to use interface.',
 				'image'    => 'https://tailwindui.com/img/features/feature-example-1.png',
 				'features' => array(
 					array(
@@ -262,7 +262,7 @@ get_header();
 		<?php
 			$second_group_features = array(
 				'label'    => 'Empower Your Customers',
-				'desc'     => 'Let your customers customize your products. Allow them to visualize the final product before placing an order',
+				'desc'     => 'Let your customers customize your products. Allow them to visualize the final product before placing an order.',
 				'image'    => 'https://tailwindui.com/img/features/feature-example-2.png',
 				'features' => array(
 					array(
@@ -604,7 +604,7 @@ get_header();
   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
 	<div class="xl:grid xl:grid-cols-3 xl:gap-8">
 	  <div class="space-y-8 xl:col-span-1">
-		<img class="h-10" src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg" alt="Company name">
+		<img class="h-10" src="https://p198.p4.n0.cdn.getcloudapp.com/items/mXurb4Dx/1de29d3c-40a1-4368-994e-5a035eea02a7.png" alt="PersonalBridge">
 		<p class="text-gray-500 text-base">
 		  Making better ecommerce user experience with the best tools for personalized products.
 		</p>
