@@ -143,7 +143,7 @@ get_header();
 <!-- Features -->
 <div class="py-16 bg-indigo-50 overflow-hidden lg:py-24" id="features">
   <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
-  <svg class="hidden lg:block absolute top-0 left-1/2 transform translate-x-64 -translate-y-20" width="640" height="784" fill="none" viewBox="0 0 640 784" aria-hidden="true">
+  <svg class="hidden lg:block absolute top-0 left-1/2 transform translate-x-64 -translate-y-20" width="640" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
 	  <defs>
 		<pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
 		  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
@@ -201,7 +201,7 @@ get_header();
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
 						</svg>',
 						'label' => 'Create your own product catalog',
-						'desc'  => 'Import product catalog from your favorite provider with just one click or add product catalog from any provider manually with no limitation;',
+						'desc'  => 'Import product catalog from your favorite provider with just one click or add product catalog from any provider manually with no limitation.',
 					),
 				),
 			);
