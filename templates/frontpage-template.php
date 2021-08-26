@@ -166,7 +166,7 @@ get_header();
 			$first_group_features = array(
 				'label'    => 'Unlimited Customization',
 				'desc'     => 'Add unlimited customization options, conditional logic, personalized campaigns, powerful & easy to use interface.',
-				'image'    => 'https://tailwindui.com/img/features/feature-example-1.png',
+				'image'    => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/app-features.gif',
 				'features' => array(
 					array(
 						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -245,7 +245,9 @@ get_header();
 		  </defs>
 		  <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
 		</svg>
-		<img class="relative mx-auto" width="490" src="<?php echo $first_group_features['image']; ?>" alt="">
+		<div class="bg-white shadow-xl rounded-md p-3 m-10">
+			<img class="relative mx-auto" src="<?php echo $first_group_features['image']; ?>" alt="">
+		</div>
 	  </div>
 	</div>
 
