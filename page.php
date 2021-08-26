@@ -3,7 +3,7 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
+		<main id="main" class="site-main mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto mb-24">
 			<?php
 
 			// Start the Loop.
