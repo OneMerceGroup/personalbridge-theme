@@ -3,14 +3,14 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main text-gray-800">
+		<main id="main" class="site-main mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
 			<?php
 
 			// Start the Loop.
 			while ( have_posts() ) :
 				the_post();
 				?>
-				<h1 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate block text-center p-10"><?php the_title(); ?></h1>
+				<h1 class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl p-10"><?php the_title(); ?></h1>
 				<?php
 
 				get_template_part( 'template-parts/content/content', 'page' );

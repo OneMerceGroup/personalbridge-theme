@@ -16,44 +16,44 @@
 				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'personalbridge' ); ?></a>
 					<header id="masthead" class="site-header">
 						<!-- Start --> 
-						<div class="relative bg-gray-50 overflow-hidden">
+						<div class="relative bg-gray-50">
 							
 							<div class="relative pt-6 pb-6">
 								<div x-data="Components.popover({ open: false, focus: true })" x-init="init()" @keydown.escape="onEscape" @close-popover-group.window="onClosePopoverGroup">
 								<nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
 									<div class="flex items-center flex-1">
-									<div class="flex items-center justify-between w-full md:w-auto">
-										<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-										<span class="sr-only">PersonalBridge</span>
-										<img class="h-8 w-auto sm:h-10" src="https://p198.p4.n0.cdn.getcloudapp.com/items/mXurb4Dx/1de29d3c-40a1-4368-994e-5a035eea02a7.png" alt="">
-										</a>
-										<div class="-mr-2 flex items-center md:hidden">
-										<button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" @click="toggle" @mousedown="if (open) $event.preventDefault()" aria-expanded="false" :aria-expanded="open.toString()">
-											<span class="sr-only">Open main menu</span>
-											<!-- Heroicon name: outline/menu -->
-											<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-											</svg>
-										</button>
+										<div class="flex items-center justify-between w-full md:w-auto">
+											<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+											<span class="sr-only">PersonalBridge</span>
+											<img class="h-8 w-auto sm:h-10" src="https://p198.p4.n0.cdn.getcloudapp.com/items/mXurb4Dx/1de29d3c-40a1-4368-994e-5a035eea02a7.png" alt="">
+											</a>
+											<div class="-mr-2 flex items-center md:hidden">
+											<button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" @click="toggle" @mousedown="if (open) $event.preventDefault()" aria-expanded="false" :aria-expanded="open.toString()">
+												<span class="sr-only">Open main menu</span>
+												<!-- Heroicon name: outline/menu -->
+												<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+												<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+												</svg>
+											</button>
+											</div>
 										</div>
-									</div>
-									<div class="hidden md:block md:ml-10 md:space-x-10">
-										<?php
-										wp_nav_menu(
-											array(
-												'theme_location'  => 'primary-menu',
-												'menu_class'      => 'menu-wrapper',
-												'container_class' => 'primary-menu-container',
-												'items_wrap'      => '<ul id="primary-menu-list" class="%2$s flex">%3$s</ul>',
-												'fallback_cb'     => false,
-											)
-										);
-										?>
-									</div>
+										<div class="hidden md:block md:ml-10 md:space-x-10">
+											<?php
+											wp_nav_menu(
+												array(
+													'theme_location'  => 'primary-menu',
+													'menu_class'      => 'menu-wrapper',
+													'container_class' => 'primary-menu-container',
+													'items_wrap'      => '<ul id="primary-menu-list" class="%2$s md:flex">%3$s</ul>',
+													'fallback_cb'     => false,
+												)
+											);
+											?>
+										</div>
 									</div>
 								</nav>
 
-								<div x-show="open" x-transition:enter="duration-150 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" x-description="Mobile menu, show/hide based on menu open state." class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden" x-ref="panel" @click.away="open = false" style="display: none;">
+								<div x-show="open" x-transition:enter="duration-150 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" x-description="Mobile menu, show/hide based on menu open state." class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-50" x-ref="panel" @click.away="open = false" style="display: none;">
 									<div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
 									<div class="px-5 pt-4 flex items-center justify-between">
 										<div>
@@ -70,15 +70,17 @@
 										</div>
 									</div>
 									<div class="px-2 pt-2 pb-3 space-y-1">
-										<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
-
-										<a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
-
-										<a href="https://personalbridge.myshopify.com/" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Demos</a>
-
-										<a href="#pricing" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Pricing</a>
-										<a href="#partners" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Partners</a>
-										<a href="https://support.personalbridge.com" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Helps</a>
+										<?php
+										wp_nav_menu(
+											array(
+												'theme_location'  => 'primary-menu',
+												'menu_class'      => 'menu-wrapper',
+												'container_class' => 'primary-menu-container',
+												'items_wrap'      => '<ul id="primary-menu-list" class="%2$s md:flex">%3$s</ul>',
+												'fallback_cb'     => false,
+											)
+										);
+										?>
 									</div>
 									
 									</div>

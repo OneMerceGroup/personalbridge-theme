@@ -42,7 +42,8 @@ add_action( 'wp_enqueue_scripts', function () {
 } );
 
 add_filter( 'nav_menu_css_class', function( $classes, $item, $args, $depth ) {
-	$classes[] = 'relative font-medium hover:text-gray-900 ml-10';
+	$classes[] = 'relative font-medium hover:text-gray-900 md:ml-10 px-3 py-2 md:px-0 md:py-0';
+	// block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50
 	if ( is_object( $item ) && property_exists( $item, 'current' ) && $item->current ) {
 		$classes[] = 'text-gray-900';
 	} else {
