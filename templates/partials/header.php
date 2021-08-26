@@ -10,13 +10,13 @@
 	<?php wp_body_open(); ?>
 
 	<?php
-		if ( ! is_page_template( 'templates/frontpage-template.php' ) ) {
-			?>
+	if ( ! is_page_template( 'templates/frontpage-template.php' ) ) {
+		?>
 			<div class="site">
 				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'personalbridge' ); ?></a>
 					<header id="masthead" class="site-header">
 						<!-- Start --> 
-						<div class="relative bg-gray-50">
+						<div class="relative bg-gray-50 shadow">
 							
 							<div class="relative pt-6 pb-6">
 								<div x-data="Components.popover({ open: false, focus: true })" x-init="init()" @keydown.escape="onEscape" @close-popover-group.window="onClosePopoverGroup">
@@ -38,19 +38,24 @@
 											</div>
 										</div>
 										<div class="hidden md:block md:ml-10 md:space-x-10">
-											<?php
-											wp_nav_menu(
-												array(
-													'theme_location'  => 'primary-menu',
-													'menu_class'      => 'menu-wrapper',
-													'container_class' => 'primary-menu-container',
-													'items_wrap'      => '<ul id="primary-menu-list" class="%2$s md:flex">%3$s</ul>',
-													'fallback_cb'     => false,
-												)
-											);
-											?>
+										<?php
+										wp_nav_menu(
+											array(
+												'theme_location'  => 'primary-menu',
+												'menu_class'      => 'menu-wrapper',
+												'container_class' => 'primary-menu-container',
+												'items_wrap'      => '<ul id="primary-menu-list" class="%2$s md:flex">%3$s</ul>',
+												'fallback_cb'     => false,
+											)
+										);
+										?>
 										</div>
 									</div>
+									<div class="hidden md:block text-right">
+										<a href="https://dashboard.personalbridge.com" target="_blank" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+											Get Started
+										</a>
+									</div>			
 								</nav>
 
 								<div x-show="open" x-transition:enter="duration-150 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" x-description="Mobile menu, show/hide based on menu open state." class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-50" x-ref="panel" @click.away="open = false" style="display: none;">
@@ -73,11 +78,11 @@
 										<?php
 										wp_nav_menu(
 											array(
-												'theme_location'  => 'primary-menu',
-												'menu_class'      => 'menu-wrapper',
+												'theme_location' => 'primary-menu',
+												'menu_class'  => 'menu-wrapper',
 												'container_class' => 'primary-menu-container',
-												'items_wrap'      => '<ul id="primary-menu-list" class="%2$s md:flex">%3$s</ul>',
-												'fallback_cb'     => false,
+												'items_wrap'  => '<ul id="primary-menu-list" class="%2$s md:flex">%3$s</ul>',
+												'fallback_cb' => false,
 											)
 										);
 										?>
@@ -91,8 +96,7 @@
 						
 					</header><!-- #masthead -->
 
-				<div id="content" class="site-content relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6">	
+				<div id="content" class="site-content relative max-w-7xl mx-auto px-4 sm:px-6">	
 			<?php
-		}
+	}
 	?>
-	

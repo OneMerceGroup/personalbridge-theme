@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('prose-indigo prose-lg text-gray-500 mx-auto'); ?>>
 	
 	<div class="entry-content">
 		<?php
