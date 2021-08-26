@@ -361,19 +361,19 @@ get_header();
 	  </div>
 	  <div class="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
 		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-		  <img class="max-w-12" src="https://customcat.com/wp-content/uploads/2020/08/CC_Logo_2020_Horizontal_EYS-e1598347452413.png" alt="Workcation">
+		  <img class="max-w-12" src="https://customcat.com/wp-content/uploads/2020/08/CC_Logo_2020_Horizontal_EYS-e1598347452413.png" alt="Customcat">
 		</div>
 		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-		  <img class="max-w-12" src="https://cdn2.hubspot.net/hub/3942223/hubfs/Scalable%20Press%20November2017/image/scalablepress_logo-Scalable-Black.png" alt="Mirage">
+		  <img class="max-w-12" src="https://cdn2.hubspot.net/hub/3942223/hubfs/Scalable%20Press%20November2017/image/scalablepress_logo-Scalable-Black.png" alt="ScalablePress">
 		</div>
 		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-		  <img class="" src="https://gearment.com/gearment/themes/gearment/assets/images/logo_gearment.png" alt="Tuple">
+		  <img class="" src="https://gearment.com/gearment/themes/gearment/assets/images/logo_gearment.png" alt="Gearment">
 		</div>
 		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-		  <img class="max-w-12" src="https://merchize.com/wp-content/uploads/2021/04/logo_retina.png" alt="Laravel">
+		  <img class="max-w-12" src="https://merchize.com/wp-content/uploads/2021/04/logo_retina.png" alt="Merchize">
 		</div>
 		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-		  <img class="max-w-12" src="https://assets.inkgo.io/img/logo/dreamship.svg" alt="StaticKit">
+		  <img class="max-w-12" src="https://assets.inkgo.io/img/logo/dreamship.svg" alt="Dreamship">
 		</div>
 		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
 		  <div class="text-sm text-gray-500">More coming soon!</div>
@@ -437,7 +437,31 @@ get_header();
 					</svg>
 				  </div>
 				  <p class="ml-3 text-sm text-gray-700">
-					Unlimited product previews
+				  	Unlimited number of stores
+				  </p>
+				</li>
+
+				<li class="flex items-start lg:col-span-1">
+				  <div class="flex-shrink-0">
+					<!-- Heroicon name: solid/check-circle -->
+					<svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+					  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+					</svg>
+				  </div>
+				  <p class="ml-3 text-sm text-gray-700">
+				  Unlimited product catalogs
+				  </p>
+				</li>
+
+				<li class="flex items-start lg:col-span-1">
+				  <div class="flex-shrink-0">
+					<!-- Heroicon name: solid/check-circle -->
+					<svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+					  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+					</svg>
+				  </div>
+				  <p class="ml-3 text-sm text-gray-700">
+				  Unlimited customization options
 				  </p>
 				</li>
 
@@ -461,31 +485,7 @@ get_header();
 					</svg>
 				  </div>
 				  <p class="ml-3 text-sm text-gray-700">
-					Unlimited number of stores
-				  </p>
-				</li>
-
-				<li class="flex items-start lg:col-span-1">
-				  <div class="flex-shrink-0">
-					<!-- Heroicon name: solid/check-circle -->
-					<svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-					  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-					</svg>
-				  </div>
-				  <p class="ml-3 text-sm text-gray-700">
-					Unlimited number of stores
-				  </p>
-				</li>
-
-				<li class="flex items-start lg:col-span-1">
-				  <div class="flex-shrink-0">
-					<!-- Heroicon name: solid/check-circle -->
-					<svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-					  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-					</svg>
-				  </div>
-				  <p class="ml-3 text-sm text-gray-700">
-					Unlimited number of stores
+				  Unlimited personalized campaigns
 				  </p>
 				</li>
 
@@ -535,27 +535,27 @@ get_header();
 				$faqs = array(
 					array(
 						'question' => 'What is PersonalBridge?',
-						'answer'   => "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+						'answer'   => "PersonalBridge is an product personalization application, built to enhance e-commerce experiences. With PersonalBridge your products can be customized easily online in your store by your own clients. PersonalBridge works also as powerful web to print tool, so not only will your customers personalize what they are buying, but you will also receive a ready to print (or engrave) file of the design they created.",
 					),
 					array(
 						'question' => 'How can I add PersonalBridge to my e-commerce store?',
-						'answer'   => 'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut tempora vitae odio inventore fuga aliquam nostrum quod porro. Delectus quia facere id sequi expedita natus.',
+						'answer'   => 'At the moment we support Shopify and Shopbase app. You just need a few steps to install the app & start using the app. If you need any further information, please feel free to contact us via email <strong>support@personalbridge.com</strong>.',
 					),
 					array(
 						'question' => 'What are the payment options?',
-						'answer'   => 'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut tempora vitae odio inventore fuga aliquam nostrum quod porro. Delectus quia facere id sequi expedita natus.',
+						'answer'   => 'Our payments are processed through PayPal. You can pay with your PayPal account or Credit Card (Mastercard, Visa, American Express and Discover).',
 					),
 					array(
 						'question' => 'Do all plans include support?',
-						'answer'   => 'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut tempora vitae odio inventore fuga aliquam nostrum quod porro. Delectus quia facere id sequi expedita natus.',
+						'answer'   => 'Yes, our plans include standard support, where you can reach out to our support team at <strong>support@personalbridge.com</strong> and get an answer in less than 24 hs, during normal office hours.',
 					),
 					array(
 						'question' => 'Can my customers add their own pictures to my products?',
-						'answer'   => 'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut tempora vitae odio inventore fuga aliquam nostrum quod porro. Delectus quia facere id sequi expedita natus.',
+						'answer'   => 'Yes, there\'s a custom picture upload option, where your customers are able to upload their own pictures, logos or designs in JPG or PNG files.',
 					),
 					array(
 						'question' => 'What kind of support do you offer?',
-						'answer'   => 'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut tempora vitae odio inventore fuga aliquam nostrum quod porro. Delectus quia facere id sequi expedita natus.',
+						'answer'   => 'All our plans include email support.',
 					),
 				);
 
