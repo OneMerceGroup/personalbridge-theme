@@ -263,7 +263,7 @@ get_header();
 			$second_group_features = array(
 				'label'    => 'Empower Your Customers',
 				'desc'     => 'Let your customers customize your products. Allow them to visualize the final product before placing an order.',
-				'image'    => 'https://tailwindui.com/img/features/feature-example-2.png',
+				'image'    => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/storefront-custom.gif',
 				'features' => array(
 					array(
 						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -327,7 +327,7 @@ get_header();
 			</defs>
 			<rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
 		  </svg>
-		  <img class="relative mx-auto" width="490" src="<?php echo esc_url( $second_group_features['image'] ); ?>" alt="">
+		  <div class="bg-white shadow-xl rounded-md p-3 m-10"><img class="relative mx-auto" src="<?php echo esc_url( $second_group_features['image'] ); ?>" alt=""></div>
 		</div>
 	  </div>
 	</div>
@@ -437,7 +437,7 @@ get_header();
 					</svg>
 				  </div>
 				  <p class="ml-3 text-sm text-gray-700">
-				  	Unlimited number of stores
+					  Unlimited number of stores
 				  </p>
 				</li>
 
@@ -535,7 +535,7 @@ get_header();
 				$faqs = array(
 					array(
 						'question' => 'What is PersonalBridge?',
-						'answer'   => "PersonalBridge is an product personalization application, built to enhance e-commerce experiences. With PersonalBridge your products can be customized easily online in your store by your own clients. PersonalBridge works also as powerful web to print tool, so not only will your customers personalize what they are buying, but you will also receive a ready to print (or engrave) file of the design they created.",
+						'answer'   => 'PersonalBridge is an product personalization application, built to enhance e-commerce experiences. With PersonalBridge your products can be customized easily online in your store by your own clients. PersonalBridge works also as powerful web to print tool, so not only will your customers personalize what they are buying, but you will also receive a ready to print (or engrave) file of the design they created.',
 					),
 					array(
 						'question' => 'How can I add PersonalBridge to my e-commerce store?',
