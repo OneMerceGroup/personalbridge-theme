@@ -141,80 +141,140 @@ get_header();
 </div>
 
 <!-- Features -->
+<!-- Mobile -->
+<div id="features">
+	<?php
+		$feature_label = 'Customers design — And buy! Personalized products from your store';
+		$feature_desc = "Let's customers personalize any product and visualize how they’ll look before checking out.";
+		$features = array(
+			array(
+				'label' => 'Upload cliparts from folder',
+				'desc'  => 'Upload and manage settings of all clipart images easily and quickly with uploading nested folders.',
+				'image' => 'https://picsum.photos/800/845',
+			),
+			array(
+				'label' => 'Create mockup from PSD',
+				'desc'  => 'Create your own mockup quickly by importing PSD files. Easily edit and display artwork on product mockup in your own style.',
+				'image' => 'https://picsum.photos/800/845',
+			),
+			array(
+				'label' => 'Artwork Templates from PSD',
+				'desc'  => 'Powerful artwork editor to help you create design and manage personalization settings. Re-use artwork for multiple POD products and campaigns. Automatically create templates based on PSD file structure.',
+				'image' => 'https://picsum.photos/800/845',
+			),
+			array(
+				'label' => 'Auto fulfill with fulfillment services',
+				'desc'  => 'Automate fulfillment with your favorite fulfillments. Automatic create file design file base on the selection of your customer. You can download file print or automatically send orders to your fulfillment service.',
+				'image' => 'https://picsum.photos/800/845',
+			),
+			array(
+				'label' => 'Create your own product catalog',
+				'desc'  => 'Import product catalog from your favorite provider with just one click or add product catalog from any provider manually with no limitation.',
+				'image' => 'https://picsum.photos/800/845',
+			),
+			array(
+				'label' => 'Customizations',
+				'desc'  => 'Customers changes clipart, enter text or can upload their own images and use them to create uniquely personal products. Your customer only need change and buy.',
+				'image' => 'https://picsum.photos/800/845',
+			),
+			array(
+				'label' => 'Conditional Logic',
+				'desc'  => 'Conditional logic lets you show and hide options depending on the value of previous options.',
+				'image' => 'https://picsum.photos/800/845',
+			),
+			array(
+				'label' => 'Live Preview',
+				'desc'  => 'PersonalBridge allows you to configure a live preview image that will automatically get updated when your customers will change their selection.',
+				'image' => 'https://picsum.photos/800/845',
+			),
+		);
+	?>
+	<div id="features-mobile" class="md:hidden px-6 py-14 bg-indigo-50 relative">
+		<div class="relative">
+			<h2 class="text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl text-center">
+				<?php echo $feature_label; ?>
+			</h2>
+			<p class="mt-4 max-w-4xl mx-auto text-md text-gray-500 text-center">
+				<?php echo $feature_desc; ?>
+			</p>
+		</div>
 
-<div id="features" class="feature featurescroll bg-indigo-50 relative opacity-0">
-	<div class="containerscroll w-container px-4 lg:px-12 lg:max-w-7xl">
-		<div class="w-layout-grid contenttext">
-			<div class="content-title-home-china homepage">
-				<div class="relative">
-					<h2 class="text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-						Customers design — And buy! Personalized products from your store
-					</h2>
-					<p class="mt-4 max-w-4xl mx-auto text-md text-gray-500">
-						Let's customers personalize any product and visualize how they’ll look before checking out.
-					</p>
-				</div>
+		<div class="mt-16">
+		<?php
+		foreach ( $features as $index => $feature ) {
+			if ( 0 == $index % 2 ) { // even.
+				$wrap_class = 'lg:pb-16 lg:pt-16';
+				$item_class = 'sm:w-1/2 order-first sm:order-last';
+				$image_class = 'sm:w-4/5';
+				$content_class = 'order-last sm:order-first';
+			} else { // odd.
+				$wrap_class = 'lg:pt-16 lg:pb-32';
+				$item_class = 'w-full sm:w-1/2';
+				$image_class = 'sm:w-4/5 sm:ml-0';
+				$content_class = '';
+			}
+		?>
+		<div class="flex flex-col sm:flex-row items-center content-center py-6 md:py-12 <?php echo $wrap_class; ?>">
+			<!-- Start Feature Image -->
+			<div class="feature-2 <?php echo $item_class; ?> mb-4 lg:mb-0 relative">
+				<img data-src="img/device-mobile-tablet-desktop.png" class="lazy mx-auto z-10 relative w-2/3 <?php echo $image_class; ?> lg:w-2/3 loaded" alt="<?php echo $feature['label']; ?>" data-ll-status="loaded" src="<?php echo esc_url( $feature['image'] ); ?>">
 			</div>
-			<?php
-				$features = array(
-					array(
-						'label' => 'Upload cliparts from folder',
-						'desc'  => 'Upload and manage settings of all clipart images easily and quickly with uploading nested folders.',
-					),
-					array(
-						'label' => 'Create mockup from PSD',
-						'desc'  => 'Create your own mockup quickly by importing PSD files. Easily edit and display artwork on product mockup in your own style.',
-					),
-					array(
-						'label' => 'Artwork Templates from PSD',
-						'desc'  => 'Powerful artwork editor to help you create design and manage personalization settings. Re-use artwork for multiple POD products and campaigns. Automatically create templates based on PSD file structure.',
-					),
-					array(
-						'label' => 'Auto fulfill with fulfillment services',
-						'desc'  => 'Automate fulfillment with your favorite fulfillments. Automatic create file design file base on the selection of your customer. You can download file print or automatically send orders to your fulfillment service.',
-					),
-					array(
-						'label' => 'Create your own product catalog',
-						'desc'  => 'Import product catalog from your favorite provider with just one click or add product catalog from any provider manually with no limitation.',
-					),
-					array(
-						'label' => 'Customizations',
-						'desc'  => 'Customers changes clipart, enter text or can upload their own images and use them to create uniquely personal products. Your customer only need change and buy.',
-					),
-					array(
-						'label' => 'Conditional Logic',
-						'desc'  => 'Conditional logic lets you show and hide options depending on the value of previous options.',
-					),
-					array(
-						'label' => 'Live Preview',
-						'desc'  => 'PersonalBridge allows you to configure a live preview image that will automatically get updated when your customers will change their selection.',
-					),
-				);
+			<!-- End Feature Image -->
 
-				$feature_images = array();
-				foreach ( $features as $index => $feature ) {
-					$feature_images[] = '<div id="img-scroll-' . $index . '" class="content-image-2 imagescroll py-2"><img src="https://picsum.photos/800/845" width="591" alt="" class="image-38 image-scroll"></div>';
-					?>
-					<div class="div-block-211 block-text hidetext">
-						<h3 class="heading-21 headingtextscroll">
-							<span class="text-lg leading-6 font-medium text-gray-900"><?php echo $feature['label']; ?></span>
-						</h3>
-						<div class="textscroll-wrap hidden">
-							<p data-img-scroll="img-scroll-<?php echo esc_attr( $index ); ?>" class="pa textscroll block text-md text-gray-500">
-								<?php echo $feature['desc']; ?>
-							</p>
-						</div>
-					</div>
-					<?php
-				}
-			?>
+			<!-- Start Feature Content -->
+			<div class="w-full sm:w-1/2 <?php echo $content_class; ?>">
+				<h2 class="text-xl text-center sm:text-left sm:text-2xl lg:text-3xl font-semibold"><?php echo $feature['label']; ?></h2>
+				<p class="text-sm text-center sm:text-left lg:text-lg pt-4 pb-8 text-gray-700">
+					<?php echo $feature['desc']; ?>
+				</p>
+			
+			</div>
+			<!-- End Feature Content -->
+		</div>
+		<?php } ?>
 		</div>
 	</div>
-	<div class="w-layout-grid contentimage" data-ix="new-interaction">
-		<?php echo implode( '', $feature_images ); ?>
+	<!-- End Mobile -->
+	<div id="features-md" class="feature featurescroll bg-indigo-50 relative opacity-0 hidden md:block pb-16">
+		<div class="containerscroll w-container px-4 lg:px-12 lg:max-w-7xl">
+			<div class="w-layout-grid contenttext">
+				<div class="content-title-home-china homepage">
+					<div class="relative">
+						<h2 class="text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+							<?php echo $feature_label; ?>
+						</h2>
+						<p class="mt-4 max-w-4xl mx-auto text-md text-gray-500">
+							<?php echo $feature_desc; ?>
+						</p>
+					</div>
+				</div>
+				<?php
+					
+
+					$feature_images = array();
+					foreach ( $features as $index => $feature ) {
+						$feature_images[] = '<div id="img-scroll-' . $index . '" class="content-image-2 imagescroll py-2"><img src="https://picsum.photos/800/845" width="591" alt="" class="image-38 image-scroll"></div>';
+						?>
+						<div class="div-block-211 block-text hidetext">
+							<h3 class="heading-21 headingtextscroll">
+								<span class="text-lg leading-6 font-medium text-gray-900"><?php echo $feature['label']; ?></span>
+							</h3>
+							<div class="textscroll-wrap hidden">
+								<p data-img-scroll="img-scroll-<?php echo esc_attr( $index ); ?>" class="pa textscroll block text-md text-gray-500">
+									<?php echo $feature['desc']; ?>
+								</p>
+							</div>
+						</div>
+						<?php
+					}
+				?>
+			</div>
+		</div>
+		<div class="w-layout-grid contentimage" data-ix="new-interaction">
+			<?php echo implode( '', $feature_images ); ?>
+		</div>
 	</div>
-</div>
- 
+</div> 
 
 <!-- Partners -->
 <!-- This example requires Tailwind CSS v2.0+ -->

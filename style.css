@@ -16,7 +16,7 @@ Text Domain: personalbridge
 
 .containerscroll {
 	position: absolute;
-	left: -45px;
+	left: 0px;
 	top: 0px;
 	right: 0px;
 	bottom: 0px;
@@ -231,4 +231,10 @@ Text Domain: personalbridge
 
 #img-scroll-0 {
 	padding-top: 250px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.containerscroll {
+		left: -45px;
+	}
 }
