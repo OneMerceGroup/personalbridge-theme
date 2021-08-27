@@ -8,3 +8,8 @@ Version: 0.0.1
 Text Domain: personalbridge
 */
 
+@media only screen and (max-width: 1277px) {
+	.pb-sm-hidden {
+		display: none!important;
+	}
+}

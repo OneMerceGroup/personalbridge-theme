@@ -39,6 +39,7 @@ add_action( 'after_setup_theme', 'personalbridge_setup' );
 add_action(
 	'wp_enqueue_scripts',
 	function () {
+		wp_enqueue_style( 'personalbridge-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 		wp_enqueue_style( 'tailwind', get_template_directory_uri() . '/assets/css/tailwind.css', array(), '2.2.7' );
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'alpine', get_template_directory_uri() . '/assets/js/alpine.js', array(), '0.01', true );
