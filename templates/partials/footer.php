@@ -54,66 +54,51 @@
 				</div>
 			</div>
 			<div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-				<div class="md:grid md:grid-cols-1 md:gap-8">
-				
-				<div class="mt-12 md:mt-0">
-					<h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-					Demos
-					</h3>
-					<ul role="list" class="mt-4 space-y-4">
-					<li>
-						<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-						Pricing
-						</a>
-					</li>
+				<?php
+					$footer_menus = array(
+						'Footer Menu 1' => wp_nav_menu(
+							array(
+								'theme_location'  => 'footer-menu-1',
+								'menu_class'      => 'footer-menu-wrapper',
+								'container_class' => 'footer-menu-container',
+								'items_wrap'      => '<ul class="%2$s mt-4 space-y-4">%3$s</ul>',
+								'fallback_cb'     => false,
+								'echo' => false,
+							)
+						),
+						'Footer Menu 2' => wp_nav_menu(
+							array(
+								'theme_location'  => 'footer-menu-2',
+								'menu_class'      => 'footer-menu-wrapper',
+								'container_class' => 'footer-menu-container',
+								'items_wrap'      => '<ul class="%2$s mt-4 space-y-4">%3$s</ul>',
+								'fallback_cb'     => false,
+								'echo' => false,
+							)
+						),
+					);
+					foreach ( $footer_menus as $location => $menu_content ) {
+						$menu_slug_location = sanitize_title( $location );
+						$menu_name = wp_get_nav_menu_name( $menu_slug_location );
 
-					<li>
-						<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-						Documentation
-						</a>
-					</li>
-
-					<li>
-						<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-						Guides
-						</a>
-					</li>
-
-					<li>
-						<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-						API Status
-						</a>
-					</li>
-					</ul>
-				</div>
-				</div>
-				<div class="md:grid md:grid-cols-1 md:gap-8">
-				
-				<div class="mt-12 md:mt-0">
-					<h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-					Legal
-					</h3>
-					<ul role="list" class="mt-4 space-y-4">
-					<li>
-						<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-						Claim
-						</a>
-					</li>
-
-					<li>
-						<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-						Privacy
-						</a>
-					</li>
-
-					<li>
-						<a href="#" class="text-base text-gray-500 hover:text-gray-900">
-						Terms
-						</a>
-					</li>
-					</ul>
-				</div>
-				</div>
+						if ( ! empty( $menu_content ) ) {
+						?>
+						<div class="md:grid md:grid-cols-1 md:gap-8">
+							<div class="mt-12 md:mt-0">
+								<h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+									<?php echo esc_html( $menu_name ); ?>
+								</h3>
+								<?php echo $menu_content; ?>
+							</div>
+						</div>
+						<?php
+						} else {
+							?>
+							<p>Please go to <strong>Appearance -> Menus</strong> to create or assign a menu to location <strong><?php echo esc_html( $location ); ?></strong></p>
+							<?php
+						}
+					}
+				?>
 			</div>
 			</div>
 			<div class="mt-12 border-t border-gray-200 pt-8">
