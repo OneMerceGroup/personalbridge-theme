@@ -141,200 +141,80 @@ get_header();
 </div>
 
 <!-- Features -->
-<div class="py-16 bg-indigo-50 overflow-hidden lg:py-24" id="features">
-  <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
-  <svg class="hidden lg:block absolute top-0 left-1/2 transform translate-x-64 -translate-y-20" width="640" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
-	  <defs>
-		<pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-		  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-		</pattern>
-	  </defs>
-	  <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
-	</svg>
 
-	<div class="relative">
-	  <h2 class="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-	  Customers design — And buy! — Personalized products from your store
-	  </h2>
-	  <p class="mt-4 max-w-4xl mx-auto text-center text-xl text-gray-500">
-	  Let's customers personalize any product and visualize how they’ll look before checking out. PersonalBridge automates your work by integrating with your favorite fulfillment services: CustomCat, Gearment, Dreamship, ScalablePress, Merchize.
-	  </p>
-	</div>
-
-	<div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-		<?php
-			$first_group_features = array(
-				'label'    => 'Unlimited Customization',
-				'desc'     => 'Add unlimited customization options, conditional logic, personalized campaigns, powerful & easy to use interface.',
-				'image'    => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/app-features.gif',
-				'features' => array(
+<div id="features" class="feature featurescroll bg-indigo-50 relative opacity-0">
+	<div class="containerscroll w-container px-4 lg:px-12 lg:max-w-7xl">
+		<div class="w-layout-grid contenttext">
+			<div class="content-title-home-china homepage">
+				<div class="relative">
+					<h2 class="text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+						Customers design — And buy! Personalized products from your store
+					</h2>
+					<p class="mt-4 max-w-4xl mx-auto text-md text-gray-500">
+						Let's customers personalize any product and visualize how they’ll look before checking out.
+					</p>
+				</div>
+			</div>
+			<?php
+				$features = array(
 					array(
-						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-						</svg>',
 						'label' => 'Upload cliparts from folder',
 						'desc'  => 'Upload and manage settings of all clipart images easily and quickly with uploading nested folders.',
 					),
 					array(
-						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
-						</svg>',
 						'label' => 'Create mockup from PSD',
 						'desc'  => 'Create your own mockup quickly by importing PSD files. Easily edit and display artwork on product mockup in your own style.',
 					),
 					array(
-						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
-						</svg>',
 						'label' => 'Artwork Templates from PSD',
 						'desc'  => 'Powerful artwork editor to help you create design and manage personalization settings. Re-use artwork for multiple POD products and campaigns. Automatically create templates based on PSD file structure.',
 					),
 					array(
-						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-						</svg>',
 						'label' => 'Auto fulfill with fulfillment services',
 						'desc'  => 'Automate fulfillment with your favorite fulfillments. Automatic create file design file base on the selection of your customer. You can download file print or automatically send orders to your fulfillment service.',
 					),
 					array(
-						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-						</svg>',
 						'label' => 'Create your own product catalog',
 						'desc'  => 'Import product catalog from your favorite provider with just one click or add product catalog from any provider manually with no limitation.',
 					),
-				),
-			);
-			?>
-	  <div class="relative">
-		<h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-		
-		<?php echo $first_group_features['label']; ?>
-		</h3>
-		<p class="mt-3 text-lg text-gray-500">
-		<?php echo $first_group_features['desc']; ?>
-		
-		</p>
-
-		<dl class="mt-10 space-y-10">
-			<?php if ( isset( $first_group_features['features'] ) && ! empty( $first_group_features['features'] ) ) { ?>
-				<?php foreach ( $first_group_features['features'] as $first_feature ) { ?>
-					<div class="relative">
-						<dt>
-						<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-							<!-- Heroicon name: outline/globe-alt -->
-							<?php echo $first_feature['icon']; ?>
-						</div>
-						<p class="ml-16 text-lg leading-6 font-medium text-gray-900"><?php echo $first_feature['label']; ?></p>
-						</dt>
-						<dd class="mt-2 ml-16 text-base text-gray-500">
-						<?php echo $first_feature['desc']; ?>
-						</dd>
-					</div>
-				<?php } ?>
-			<?php } ?>
-		</dl>
-	  </div>
-
-	  <div class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
-		<svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404">
-		  <defs>
-			<pattern id="ca9667ae-9f92-4be7-abcb-9e3d727f2941" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-			  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-			</pattern>
-		  </defs>
-		  <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
-		</svg>
-		<div class="bg-white shadow-xl rounded-md p-3 m-10">
-			<img class="relative mx-auto" src="<?php echo $first_group_features['image']; ?>" alt="">
-		</div>
-	  </div>
-	</div>
-
-	<svg class="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12" width="404" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
-	  <defs>
-		<pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-		  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-		</pattern>
-	  </defs>
-	  <rect width="404" height="784" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
-	</svg>
-
-	<div class="relative mt-12 sm:mt-16 lg:mt-24">
-		<?php
-			$second_group_features = array(
-				'label'    => 'Empower Your Customers',
-				'desc'     => 'Let your customers customize your products. Allow them to visualize the final product before placing an order.',
-				'image'    => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/storefront-custom.gif',
-				'features' => array(
 					array(
-						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-						</svg>',
 						'label' => 'Customizations',
 						'desc'  => 'Customers changes clipart, enter text or can upload their own images and use them to create uniquely personal products. Your customer only need change and buy.',
 					),
 					array(
-						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
-						</svg>',
 						'label' => 'Conditional Logic',
 						'desc'  => 'Conditional logic lets you show and hide options depending on the value of previous options.',
 					),
 					array(
-						'icon'  => '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
-						</svg>',
 						'label' => 'Live Preview',
 						'desc'  => 'PersonalBridge allows you to configure a live preview image that will automatically get updated when your customers will change their selection.',
 					),
-				),
-			);
-			?>
-	  <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
-		<div class="lg:col-start-2">
-		  <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-			<?php echo $second_group_features['label']; ?>
-		  </h3>
-		  <p class="mt-3 text-lg text-gray-500">
-			<?php echo $second_group_features['desc']; ?>
-		  </p>
+				);
 
-		  <dl class="mt-10 space-y-10">
-			<?php if ( isset( $second_group_features['features'] ) && ! empty( $second_group_features['features'] ) ) { ?>
-				<?php foreach ( $second_group_features['features'] as $second_feature ) { ?>
-					<div class="relative">
-						<dt>
-							<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-							<!-- Heroicon name: outline/annotation -->
-							<?php echo $second_feature['icon']; ?>
-							</div>
-							<p class="ml-16 text-lg leading-6 font-medium text-gray-900"><?php echo $second_feature['label']; ?></p>
-						</dt>
-						<dd class="mt-2 ml-16 text-base text-gray-500">
-						<?php echo $second_feature['desc']; ?>
-						</dd>
+				$feature_images = array();
+				foreach ( $features as $index => $feature ) {
+					$feature_images[] = '<div id="img-scroll-' . $index . '" class="content-image-2 imagescroll py-2"><img src="https://picsum.photos/800/845" width="591" alt="" class="image-38 image-scroll"></div>';
+					?>
+					<div class="div-block-211 block-text hidetext">
+						<h3 class="heading-21 headingtextscroll">
+							<span class="text-lg leading-6 font-medium text-gray-900"><?php echo $feature['label']; ?></span>
+						</h3>
+						<div class="textscroll-wrap hidden">
+							<p data-img-scroll="img-scroll-<?php echo esc_attr( $index ); ?>" class="pa textscroll block text-md text-gray-500">
+								<?php echo $feature['desc']; ?>
+							</p>
+						</div>
 					</div>
-				<?php } ?>
-			<?php } ?>
-		  </dl>
+					<?php
+				}
+			?>
 		</div>
-
-		<div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
-		  <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404" aria-hidden="true">
-			<defs>
-			  <pattern id="e80155a9-dfde-425a-b5ea-1f6fadd20131" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-				<rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-			  </pattern>
-			</defs>
-			<rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
-		  </svg>
-		  <div class="bg-white shadow-xl rounded-md p-3 m-10"><img class="relative mx-auto" src="<?php echo esc_url( $second_group_features['image'] ); ?>" alt=""></div>
-		</div>
-	  </div>
 	</div>
-  </div>
+	<div class="w-layout-grid contentimage" data-ix="new-interaction">
+		<?php echo implode( '', $feature_images ); ?>
+	</div>
 </div>
+ 
 
 <!-- Partners -->
 <!-- This example requires Tailwind CSS v2.0+ -->

@@ -2,6 +2,8 @@
 	"use strict";
 
 	$(document).ready(function () {
+		$('.featurescroll').removeClass('opacity-0');
+		
 		function activeTab(obj) {
 			var tabId = $(obj).attr("data-tab_id");
 			var closest = $(obj).closest(".pb-tab");
@@ -78,5 +80,32 @@
 				}, 650);
 			}
 		});
+
+		function featured_scroll() {
+			var blockText = $('.featurescroll .block-text')
+			blockText.find('.textscroll-wrap').slideUp();
+			blockText.find('.textscroll-wrap').eq(0).slideDown();
+			blockText.addClass('hidetext');
+			blockText.eq(0).removeClass('hidetext');
+			window.addEventListener('scroll', function () {
+				var pageOffset = window.pageYOffset;
+				$('.featurescroll .imagescroll').each(function (index, val) {
+					if ($('.featurescroll .imagescroll').eq(0).offset().top < pageOffset + 700 && $('.featurescroll .imagescroll').eq(0).offset().top + 460 > pageOffset ) {
+						blockText.find('.textscroll-wrap').eq(0).slideDown();
+						blockText.eq(0).removeClass('hidetext');
+					}
+					else if ($('.featurescroll .imagescroll').eq(index).offset().top - 500 < pageOffset && $('.featurescroll .imagescroll').eq(index).offset().top + 460 > pageOffset) {
+						blockText.find('.textscroll-wrap').eq(index).slideDown();
+						blockText.eq(index).removeClass('hidetext');
+					}
+					else {
+						blockText.find('.textscroll-wrap').eq(index).slideUp();
+						blockText.eq(index).addClass('hidetext');
+					}
+				});
+			});
+		}
+		featured_scroll();
+
 	});
 })(jQuery);
