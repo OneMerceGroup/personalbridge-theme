@@ -83,7 +83,8 @@
 
 						if ( ! empty( $menu_content ) ) {
 						?>
-						<div class="md:grid md:grid-cols-1 md:gap-8">
+						<div class="md:grid md:grid-cols-2 grid-cols-1 md:gap-8">
+							<div class="md:hidden"></div>
 							<div class="mt-12 md:mt-0">
 								<h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
 									<?php echo esc_html( $menu_name ); ?>
