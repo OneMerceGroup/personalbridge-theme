@@ -1,18 +1,13 @@
 <?php
 get_header();
 ?>
-
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-
+		<main id="main" class="site-main mt-6 mb-24">
 			<?php
-
 			// Start the Loop.
 			while ( have_posts() ) :
 				the_post();
-				
 				get_template_part( 'template-parts/content/content', 'single' );
-
 				if ( is_singular( 'attachment' ) ) {
 					// Parent post navigation.
 					the_post_navigation(

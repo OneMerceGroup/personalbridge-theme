@@ -4,7 +4,7 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-	<main id="main" class="site-main">
+	<main id="main" class="site-main mt-6 mb-24">
 
 	<?php
 	if ( have_posts() ) {
@@ -12,7 +12,7 @@ get_header();
 		// Load posts loop.
 		while ( have_posts() ) {
 			the_post();
-			the_content();
+			the_excerpt();
 		}
 	} else {
 		// If no content, include the "No posts found" template.
