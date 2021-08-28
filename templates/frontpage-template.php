@@ -253,7 +253,7 @@ get_header();
 	<div id="features-md">
 		
 		<div class="feature featurescroll relative opacity-0 hidden md:block m-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl" id="features-md-backend">
-			<div class="containerscroll w-container">
+			<div class="containerscroll w-container sm:ml-6 lg:ml-8"">
 				<div class="w-layout-grid contenttext">
 					<div class="content-features">
 						<div class="relative">
