@@ -69,3 +69,14 @@ add_filter(
 	100,
 	4
 );
+
+function personalbridge_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'personalbridge_custom_excerpt_length', 999 );
+
+function personalbridge_excerpt_more( $more ) {
+    return '...';
+}
+add_filter( 'excerpt_more', 'personalbridge_excerpt_more' );
+
