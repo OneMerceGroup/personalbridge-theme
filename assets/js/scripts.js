@@ -111,7 +111,7 @@
 				if ( dataDom.length > 0 && $('#' + dataDom).length > 0 ) {
 					$('html, body').animate({
 						scrollTop: $('#' + dataDom).offset().top
-					}, 650);
+					}, 1500);
 				}
 			});
 		}

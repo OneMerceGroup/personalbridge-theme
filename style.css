@@ -206,7 +206,7 @@ Text Domain: personalbridge
 }
 
 .featurescroll .textscroll {
-	transition: .3s;
+	transition: 1s;
 }
 
 .pa {
