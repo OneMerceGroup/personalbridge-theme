@@ -96,7 +96,7 @@ get_header();
 	  </div>
 	</div>
 
-	<main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
+	<main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32 lg:px-8">
 	  <div class="lg:grid lg:grid-cols-12 lg:gap-8">
 		<div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
 		  <h1>
@@ -236,7 +236,7 @@ get_header();
 	</div>
 	<!-- End Mobile -->
 	<div id="features-md" class="feature featurescroll bg-indigo-50 relative opacity-0 hidden md:block pb-16">
-		<div class="containerscroll w-container px-4 lg:px-12 lg:max-w-7xl">
+		<div class="containerscroll w-container m-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
 			<div class="w-layout-grid contenttext">
 				<div class="content-features">
 					<div class="relative">
@@ -270,7 +270,7 @@ get_header();
 				?>
 			</div>
 		</div>
-		<div class="w-layout-grid contentimage" data-ix="new-interaction">
+		<div class="w-layout-grid contentimage pr-4 sm:pr-6 lg:pr-8" data-ix="new-interaction">
 			<?php echo implode( '', $feature_images ); ?>
 		</div>
 	</div>
