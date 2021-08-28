@@ -145,8 +145,8 @@ get_header();
 <div id="features">
 	<?php
 		$feature_label = 'Customers design — And buy! Personalized products from your store';
-		$feature_desc = "Let's customers personalize any product and visualize how they’ll look before checking out.";
-		$features = array(
+		$feature_desc  = "Let's customers personalize any product and visualize how they’ll look before checking out.";
+		$features      = array(
 			array(
 				'label' => 'Upload cliparts from folder',
 				'desc'  => 'Upload and manage settings of all clipart images easily and quickly with uploading nested folders.',
@@ -188,7 +188,7 @@ get_header();
 				'image' => 'https://picsum.photos/800/845',
 			),
 		);
-	?>
+		?>
 	<div id="features-mobile" class="md:hidden px-6 py-14 bg-indigo-50 relative">
 		<div class="relative">
 			<h2 class="text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl text-center">
@@ -203,17 +203,17 @@ get_header();
 		<?php
 		foreach ( $features as $index => $feature ) {
 			if ( 0 == $index % 2 ) { // even.
-				$wrap_class = 'lg:pb-16 lg:pt-16';
-				$item_class = 'sm:w-1/2 order-first sm:order-last';
-				$image_class = 'sm:w-4/5';
+				$wrap_class    = 'lg:pb-16 lg:pt-16';
+				$item_class    = 'sm:w-1/2 order-first sm:order-last';
+				$image_class   = 'sm:w-4/5';
 				$content_class = 'order-last sm:order-first';
 			} else { // odd.
-				$wrap_class = 'lg:pt-16 lg:pb-32';
-				$item_class = 'w-full sm:w-1/2';
-				$image_class = 'sm:w-4/5 sm:ml-0';
+				$wrap_class    = 'lg:pt-16 lg:pb-32';
+				$item_class    = 'w-full sm:w-1/2';
+				$image_class   = 'sm:w-4/5 sm:ml-0';
 				$content_class = '';
 			}
-		?>
+			?>
 		<div class="flex flex-col sm:flex-row items-center content-center py-6 md:py-12 <?php echo $wrap_class; ?>">
 			<!-- Start Feature Image -->
 			<div class="feature-2 <?php echo $item_class; ?> mb-4 lg:mb-0 relative">
@@ -238,7 +238,7 @@ get_header();
 	<div id="features-md" class="feature featurescroll bg-indigo-50 relative opacity-0 hidden md:block pb-16">
 		<div class="containerscroll w-container px-4 lg:px-12 lg:max-w-7xl">
 			<div class="w-layout-grid contenttext">
-				<div class="content-title-home-china homepage">
+				<div class="content-features">
 					<div class="relative">
 						<h2 class="text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl">
 							<?php echo $feature_label; ?>
@@ -249,24 +249,24 @@ get_header();
 					</div>
 				</div>
 				<?php
-					
+
 
 					$feature_images = array();
-					foreach ( $features as $index => $feature ) {
-						$feature_images[] = '<div id="img-scroll-' . $index . '" class="content-image-2 imagescroll py-2"><img src="https://picsum.photos/800/845" width="591" alt="" class="image-38 image-scroll"></div>';
-						?>
+				foreach ( $features as $index => $feature ) {
+					$feature_images[] = '<div id="img-scroll-' . $index . '" class="content-image-2 imagescroll py-2 flex h-screen items-center"><img src="https://picsum.photos/800/845" width="591" alt="" class="image-38 image-scroll"></div>';
+					?>
 						<div class="div-block-211 block-text hidetext">
 							<h3 class="heading-21 headingtextscroll">
 								<span class="text-lg leading-6 font-medium text-gray-900"><?php echo $feature['label']; ?></span>
 							</h3>
 							<div class="textscroll-wrap hidden">
 								<p data-img-scroll="img-scroll-<?php echo esc_attr( $index ); ?>" class="pa textscroll block text-md text-gray-500">
-									<?php echo $feature['desc']; ?>
+								<?php echo $feature['desc']; ?>
 								</p>
 							</div>
 						</div>
 						<?php
-					}
+				}
 				?>
 			</div>
 		</div>

@@ -70,22 +70,17 @@ Text Domain: personalbridge
 	flex: 0 auto;
 }
 
-.content-title-home-china.homepage {
+.content-features {
 	width: auto;
 	margin-top: 30%;
 	margin-bottom: 16px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	border-style: none;
-}
-
-.content-title-home-china {
-	margin-top: 30%;
-	margin-bottom: 16px;
-	padding-top: 0px;
 	padding-left: 0px;
 	border-radius: 1px;
 }
+
 
 .heading-26.home {
 	font-size: 25px;
