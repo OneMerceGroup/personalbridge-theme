@@ -104,6 +104,16 @@
 					}
 				});
 			});
+
+			$(document).on('click', '.headingtextscroll', function() {
+				var closest = $(this).closest('.block-text');
+				var dataDom = closest.find('p.textscroll').attr('data-img-scroll');
+				if ( dataDom.length > 0 && $('#' + dataDom).length > 0 ) {
+					$('html, body').animate({
+						scrollTop: $('#' + dataDom).offset().top
+					}, 650);
+				}
+			});
 		}
 		featured_scroll();
 

@@ -144,7 +144,7 @@ get_header();
 <!-- Mobile -->
 <div id="features">
 	<?php
-		$feature_label = 'Customers design — And buy! Personalized products from your store';
+		$feature_label = 'Customers customize — And buy! Personalized products from your store';
 		$feature_desc  = "Let's customers personalize any product and visualize how they’ll look before checking out.";
 		$features      = array(
 			array(
