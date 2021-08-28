@@ -240,3 +240,10 @@ Text Domain: personalbridge
 	}
 }
 */
+
+#features-md-frontend .contentimage{
+	margin-left: 0;
+}
+#features-md-frontend .containerscroll {
+	justify-content: flex-end;
+}

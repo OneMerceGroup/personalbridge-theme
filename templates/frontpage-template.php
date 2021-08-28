@@ -142,11 +142,12 @@ get_header();
 
 <!-- Features -->
 <!-- Mobile -->
-<div id="features">
+<div id="features" class="bg-indigo-50">
 	<?php
-		$feature_label = 'Customers customize — And buy! Personalized products from your store';
-		$feature_desc  = "Let's customers personalize any product and visualize how they’ll look before checking out.";
-		$features      = array(
+		$feature_label    = 'Customers customize — And buy! Personalized products from your store';
+		$feature_desc     = "Let's customers personalize any product and visualize how they’ll look before checking out. PersonalBridge automates your work by integrating with your favorite fulfillment services: CustomCat, Gearment, Dreamship, ScalablePress, Merchize.";
+
+		$backend_features = array(
 			array(
 				'label' => 'Upload cliparts from folder',
 				'desc'  => 'Upload and manage settings of all clipart images easily and quickly with uploading nested folders.',
@@ -172,6 +173,9 @@ get_header();
 				'desc'  => 'Import product catalog from your favorite provider with just one click or add product catalog from any provider manually with no limitation.',
 				'image' => 'https://picsum.photos/800/845',
 			),
+		);
+
+		$frontend_features = array(
 			array(
 				'label' => 'Customizations',
 				'desc'  => 'Customers changes clipart, enter text or can upload their own images and use them to create uniquely personal products. Your customer only need change and buy.',
@@ -188,8 +192,19 @@ get_header();
 				'image' => 'https://picsum.photos/800/845',
 			),
 		);
+
+		$mobile_features = array_merge( $backend_features, $frontend_features );
 		?>
-	<div id="features-mobile" class="md:hidden px-6 py-14 bg-indigo-50 relative">
+		<div class="relative pt-28">
+			<h2 class="text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center">
+				<?php echo $feature_label; ?>
+			</h2>
+			<p class="mt-4 max-w-4xl mx-auto text-md text-gray-500 text-center text-base sm:text-xl lg:text-lg xl:text-xl">
+				<?php echo $feature_desc; ?>
+			</p>
+		</div>
+
+	<div id="features-mobile" class="md:hidden px-6 py-14 relative">
 		<div class="relative">
 			<h2 class="text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl text-center">
 				<?php echo $feature_label; ?>
@@ -201,7 +216,7 @@ get_header();
 
 		<div class="mt-16">
 		<?php
-		foreach ( $features as $index => $feature ) {
+		foreach ( $mobile_features as $index => $feature ) {
 			if ( 0 == $index % 2 ) { // even.
 				$wrap_class    = 'lg:pb-16 lg:pt-16';
 				$item_class    = 'sm:w-1/2 order-first sm:order-last';
@@ -235,44 +250,85 @@ get_header();
 		</div>
 	</div>
 	<!-- End Mobile -->
-	<div id="features-md" class="feature featurescroll bg-indigo-50 relative opacity-0 hidden md:block pb-16">
-		<div class="containerscroll w-container m-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
-			<div class="w-layout-grid contenttext">
-				<div class="content-features">
-					<div class="relative">
-						<h2 class="text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-							<?php echo $feature_label; ?>
-						</h2>
-						<p class="mt-4 max-w-4xl mx-auto text-md text-gray-500">
-							<?php echo $feature_desc; ?>
-						</p>
-					</div>
-				</div>
-				<?php
-
-
-					$feature_images = array();
-				foreach ( $features as $index => $feature ) {
-					$feature_images[] = '<div id="img-scroll-' . $index . '" class="content-image-2 imagescroll py-2 flex h-screen items-center"><img src="https://picsum.photos/800/845" width="591" alt="" class="image-38 image-scroll"></div>';
-					?>
-						<div class="div-block-211 block-text hidetext">
-							<h3 class="heading-21 headingtextscroll">
-								<span class="text-lg leading-6 font-medium text-gray-900"><?php echo $feature['label']; ?></span>
-							</h3>
-							<div class="textscroll-wrap hidden">
-								<p data-img-scroll="img-scroll-<?php echo esc_attr( $index ); ?>" class="pa textscroll block text-md text-gray-500">
-								<?php echo $feature['desc']; ?>
-								</p>
-							</div>
+	<div id="features-md">
+		
+		<div class="feature featurescroll relative opacity-0 hidden md:block m-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl" id="features-md-backend">
+			<div class="containerscroll w-container">
+				<div class="w-layout-grid contenttext">
+					<div class="content-features">
+						<div class="relative">
+							<h2 class="text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+								Unlimited Customization
+							</h2>
+							<p class="mt-4 max-w-4xl mx-auto text-md text-gray-500">
+								Add unlimited customization options, conditional logic, personalized campaigns, powerful & easy to use interface.
+							</p>
 						</div>
-						<?php
-				}
-				?>
+					</div>
+					<?php
+					$backend_feature_images = array();
+					foreach ( $backend_features as $index => $feature ) {
+						$backend_feature_images[] = '<div id="backend-img-scroll-' . $index . '" class="content-image-2 imagescroll py-2 flex h-screen items-center"><img src="https://picsum.photos/800/845" width="591" alt="" class="image-38 image-scroll"></div>';
+						?>
+							<div class="div-block-211 block-text hidetext">
+								<h3 class="heading-21 headingtextscroll">
+									<span class="text-lg leading-6 font-medium text-gray-900"><?php echo $feature['label']; ?></span>
+								</h3>
+								<div class="textscroll-wrap hidden">
+									<p data-img-scroll="backend-img-scroll-<?php echo esc_attr( $index ); ?>" class="pa textscroll block text-md text-gray-500">
+									<?php echo $feature['desc']; ?>
+									</p>
+								</div>
+							</div>
+							<?php
+					}
+					?>
+				</div>
+			</div>
+			<div class="w-layout-grid contentimage pr-4 sm:pr-6 lg:pr-8" data-ix="new-interaction">
+				<?php echo implode( '', $backend_feature_images ); ?>
 			</div>
 		</div>
-		<div class="w-layout-grid contentimage pr-4 sm:pr-6 lg:pr-8" data-ix="new-interaction">
-			<?php echo implode( '', $feature_images ); ?>
+
+		
+		<div class="feature featurescroll relative opacity-0 hidden md:block pb-16 m-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl" id="features-md-frontend">
+			<div class="containerscroll w-container">
+				<div class="w-layout-grid contenttext">
+					<div class="content-features">
+						<div class="relative">
+							<h2 class="text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+							Empower Your Customers
+							</h2>
+							<p class="mt-4 max-w-4xl mx-auto text-md text-gray-500">
+							Let your customers customize your products. Allow them to visualize the final product before placing an order.
+							</p>
+						</div>
+					</div>
+					<?php
+					$frontend_feature_images = array();
+					foreach ( $frontend_features as $index => $feature ) {
+						$frontend_feature_images[] = '<div id="frontend-img-scroll-' . $index . '" class="content-image-2 imagescroll py-2 flex h-screen items-center"><img src="https://picsum.photos/800/845" width="591" alt="" class="image-38 image-scroll"></div>';
+						?>
+							<div class="div-block-211 block-text hidetext">
+								<h3 class="heading-21 headingtextscroll">
+									<span class="text-lg leading-6 font-medium text-gray-900"><?php echo $feature['label']; ?></span>
+								</h3>
+								<div class="textscroll-wrap hidden">
+									<p data-img-scroll="frontend-img-scroll-<?php echo esc_attr( $index ); ?>" class="pa textscroll block text-md text-gray-500">
+									<?php echo $feature['desc']; ?>
+									</p>
+								</div>
+							</div>
+							<?php
+					}
+					?>
+				</div>
+			</div>
+			<div class="w-layout-grid contentimage" data-ix="new-interaction"><!-- pr-4 sm:pr-6 lg:pr-8 -->
+				<?php echo implode( '', $frontend_feature_images ); ?>
+			</div>
 		</div>
+		
 	</div>
 </div> 
 
