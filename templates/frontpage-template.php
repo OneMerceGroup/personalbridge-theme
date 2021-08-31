@@ -114,12 +114,11 @@ get_header();
 		</div>
 		<div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
 		  <div class="relative mx-auto w-full rounded-lg shadow-lg">
-				<iframe width="592" height="333" src="https://www.youtube.com/embed/eud-ubKwlqE?autoplay=1" frameborder="0" allowfullscreen></iframe> 
-				<!--
-				<video width="592" height="333" autoplay loop muted controls>
-					<source src="https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/pb-video-demo-hd.mp4" type="video/mp4" />
+				<!--<div class="embed-youtube"><iframe width="592" height="300" src="https://www.youtube.com/embed/eud-ubKwlqE?autoplay=1" allow="autoplay" frameborder="0" allowfullscreen></iframe></div> -->
+				<video width="100%" height="100%" loop="" muted="" autoplay="" playsinline="" controls="">
+					<source src="https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/pb-video-demo-hd.mp4" type="video/mp4">
 					Your browser does not support the video tag.
-				</video> -->
+				</video>
 		  </div>
 		</div>
 	  </div>
