@@ -205,15 +205,6 @@ get_header();
 		</div>
 
 	<div id="features-mobile" class="md:hidden px-6 py-14 relative">
-		<div class="relative">
-			<h2 class="text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl text-center">
-				<?php echo $feature_label; ?>
-			</h2>
-			<p class="mt-4 max-w-4xl mx-auto text-md text-gray-500 text-center">
-				<?php echo $feature_desc; ?>
-			</p>
-		</div>
-
 		<div class="mt-16">
 		<?php
 		foreach ( $mobile_features as $index => $feature ) {
@@ -268,7 +259,8 @@ get_header();
 					<?php
 					$backend_feature_images = array();
 					foreach ( $backend_features as $index => $feature ) {
-						$backend_feature_images[] = '<div id="backend-img-scroll-' . $index . '" class="content-image-2 imagescroll py-2 flex h-screen items-center"><img src="' . esc_url( $feature['image'] ) . '" width="591" alt="" class="image-38 image-scroll"></div>';
+						$backend_feature_images[] = '<div id="backend-img-scroll-' . $index . '" class="content-image-2 imagescroll py-2 flex h-screen items-center">
+						<img src="' . esc_url( $feature['image'] ) . '" alt="" class="image-38 image-scroll md-image-scroll"></div>';
 						?>
 							<div class="div-block-211 block-text hidetext">
 								<h3 class="heading-21 headingtextscroll">
@@ -307,7 +299,8 @@ get_header();
 					<?php
 					$frontend_feature_images = array();
 					foreach ( $frontend_features as $index => $feature ) {
-						$frontend_feature_images[] = '<div id="frontend-img-scroll-' . $index . '" class="content-image-2 imagescroll py-2 flex h-screen items-center"><img src="' . esc_url( $feature['image'] ) . '" width="591" alt="" class="image-38 image-scroll"></div>';
+						$frontend_feature_images[] = '<div id="frontend-img-scroll-' . $index . '" class="content-image-2 imagescroll py-2 flex h-screen items-center">
+							<img src="' . esc_url( $feature['image'] ) . '" alt="" class="image-38 image-scroll md-image-scroll"></div>';
 						?>
 							<div class="div-block-211 block-text hidetext">
 								<h3 class="heading-21 headingtextscroll">

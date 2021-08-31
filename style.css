@@ -72,7 +72,7 @@ Text Domain: personalbridge
 
 .content-features {
 	width: auto;
-	margin-top: 30%;
+	margin-top: 25%;
 	margin-bottom: 16px;
 	padding-top: 0px;
 	padding-bottom: 0px;
@@ -80,6 +80,7 @@ Text Domain: personalbridge
 	padding-left: 0px;
 	border-radius: 1px;
 }
+
 
 
 .heading-26.home {
@@ -243,6 +244,7 @@ Text Domain: personalbridge
 
 #features-md-frontend .contentimage{
 	margin-left: 0;
+	margin-right: 50%;
 }
 #features-md-frontend .containerscroll {
 	justify-content: flex-end;
