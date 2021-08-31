@@ -144,34 +144,34 @@ get_header();
 <!-- Mobile -->
 <div id="features" class="bg-indigo-50">
 	<?php
-		$feature_label    = 'Customers customize — And buy! Personalized products from your store';
-		$feature_desc     = "Let's customers personalize any product and visualize how they’ll look before checking out. PersonalBridge automates your work by integrating with your favorite fulfillment services: CustomCat, Gearment, Dreamship, ScalablePress, Merchize.";
+		$feature_label = 'Customers customize — And buy! Personalized products from your store';
+		$feature_desc  = "Let's customers personalize any product and visualize how they’ll look before checking out. PersonalBridge automates your work by integrating with your favorite fulfillment services: CustomCat, Gearment, Dreamship, ScalablePress, Merchize.";
 
 		$backend_features = array(
 			array(
 				'label' => 'Upload cliparts from folder',
 				'desc'  => 'Upload and manage settings of all clipart images easily and quickly with uploading nested folders.',
-				'image' => 'https://picsum.photos/800/845',
+				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/upload-cliaprt-by-folder.jpg',
 			),
 			array(
 				'label' => 'Create mockup from PSD',
 				'desc'  => 'Create your own mockup quickly by importing PSD files. Easily edit and display artwork on product mockup in your own style.',
-				'image' => 'https://picsum.photos/800/845',
+				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/create-mockup.png',
 			),
 			array(
 				'label' => 'Artwork Templates from PSD',
 				'desc'  => 'Powerful artwork editor to help you create design and manage personalization settings. Re-use artwork for multiple POD products and campaigns. Automatically create templates based on PSD file structure.',
-				'image' => 'https://picsum.photos/800/845',
+				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/artwork.png',
 			),
 			array(
 				'label' => 'Auto fulfill with fulfillment services',
 				'desc'  => 'Automate fulfillment with your favorite fulfillments. Automatic create file design file base on the selection of your customer. You can download file print or automatically send orders to your fulfillment service.',
-				'image' => 'https://picsum.photos/800/845',
+				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/order-auto-fulfill.png',
 			),
 			array(
 				'label' => 'Create your own product catalog',
 				'desc'  => 'Import product catalog from your favorite provider with just one click or add product catalog from any provider manually with no limitation.',
-				'image' => 'https://picsum.photos/800/845',
+				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/create-catalog.png',
 			),
 		);
 
@@ -179,17 +179,17 @@ get_header();
 			array(
 				'label' => 'Customizations',
 				'desc'  => 'Customers changes clipart, enter text or can upload their own images and use them to create uniquely personal products. Your customer only need change and buy.',
-				'image' => 'https://picsum.photos/800/845',
+				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/unlimited-customization.png',
 			),
 			array(
 				'label' => 'Conditional Logic',
 				'desc'  => 'Conditional logic lets you show and hide options depending on the value of previous options.',
-				'image' => 'https://picsum.photos/800/845',
+				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/conditional-logic.png',
 			),
 			array(
 				'label' => 'Live Preview',
 				'desc'  => 'PersonalBridge allows you to configure a live preview image that will automatically get updated when your customers will change their selection.',
-				'image' => 'https://picsum.photos/800/845',
+				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/live-preview.png',
 			),
 		);
 
@@ -232,7 +232,7 @@ get_header();
 		<div class="flex flex-col sm:flex-row items-center content-center py-6 md:py-12 <?php echo $wrap_class; ?>">
 			<!-- Start Feature Image -->
 			<div class="feature-2 <?php echo $item_class; ?> mb-4 lg:mb-0 relative">
-				<img data-src="img/device-mobile-tablet-desktop.png" class="lazy mx-auto z-10 relative w-2/3 <?php echo $image_class; ?> lg:w-2/3 loaded" alt="<?php echo $feature['label']; ?>" data-ll-status="loaded" src="<?php echo esc_url( $feature['image'] ); ?>">
+				<img src="<?php echo esc_url( $feature['image'] ); ?>" class="lazy mx-auto z-10 relative w-2/3 <?php echo $image_class; ?> lg:w-2/3 loaded" alt="<?php echo $feature['label']; ?>" data-ll-status="loaded" src="<?php echo esc_url( $feature['image'] ); ?>">
 			</div>
 			<!-- End Feature Image -->
 
@@ -268,7 +268,7 @@ get_header();
 					<?php
 					$backend_feature_images = array();
 					foreach ( $backend_features as $index => $feature ) {
-						$backend_feature_images[] = '<div id="backend-img-scroll-' . $index . '" class="content-image-2 imagescroll py-2 flex h-screen items-center"><img src="https://picsum.photos/800/845" width="591" alt="" class="image-38 image-scroll"></div>';
+						$backend_feature_images[] = '<div id="backend-img-scroll-' . $index . '" class="content-image-2 imagescroll py-2 flex h-screen items-center"><img src="' . esc_url( $feature['image'] ) . '" width="591" alt="" class="image-38 image-scroll"></div>';
 						?>
 							<div class="div-block-211 block-text hidetext">
 								<h3 class="heading-21 headingtextscroll">
@@ -307,7 +307,7 @@ get_header();
 					<?php
 					$frontend_feature_images = array();
 					foreach ( $frontend_features as $index => $feature ) {
-						$frontend_feature_images[] = '<div id="frontend-img-scroll-' . $index . '" class="content-image-2 imagescroll py-2 flex h-screen items-center"><img src="https://picsum.photos/800/845" width="591" alt="" class="image-38 image-scroll"></div>';
+						$frontend_feature_images[] = '<div id="frontend-img-scroll-' . $index . '" class="content-image-2 imagescroll py-2 flex h-screen items-center"><img src="' . esc_url( $feature['image'] ) . '" width="591" alt="" class="image-38 image-scroll"></div>';
 						?>
 							<div class="div-block-211 block-text hidetext">
 								<h3 class="heading-21 headingtextscroll">
