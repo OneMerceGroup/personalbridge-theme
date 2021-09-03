@@ -1,13 +1,13 @@
-<?php 
+<?php
 	$footer_bg_class = 'bg-white';
-	if ( ! is_page_template( 'templates/frontpage-template.php' ) ) {
-		$footer_bg_class = 'bg-gray-50';
-		?>
+if ( ! is_page_template( 'templates/frontpage-template.php' ) ) {
+	$footer_bg_class = 'bg-gray-50';
+	?>
 			</div><!-- #content -->
 		</div><!-- .site -->
-		<?php
-	}
-	?>
+	<?php
+}
+?>
 
 	<!-- This example requires Tailwind CSS v2.0+ -->
 
@@ -22,7 +22,7 @@
 				</p>
 				<div class="flex space-x-6">
 
-				<a href="#" class="text-gray-400 hover:text-gray-500">
+				<a href="https://www.facebook.com/PersonalBridge" target="_blank" class="text-gray-400 hover:text-gray-500">
 					<span class="sr-only">Facebook Fanpage</span>
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 						<title>fb 3@1x</title>
@@ -37,7 +37,7 @@
 					</svg>
 				</a>
 
-				<a href="#" class="text-gray-400 hover:text-gray-500">
+				<a href="https://www.facebook.com/groups/1440391576391257" target="_blank" class="text-gray-400 hover:text-gray-500">
 					<span class="sr-only">Facebook Local Group</span>
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="22px" viewBox="0 0 19 22" version="1.1">
 						<title>fb 2@1x</title>
@@ -63,7 +63,7 @@
 								'container_class' => 'footer-menu-container',
 								'items_wrap'      => '<ul class="%2$s mt-4 space-y-4">%3$s</ul>',
 								'fallback_cb'     => false,
-								'echo' => false,
+								'echo'            => false,
 							)
 						),
 						'Footer Menu 2' => wp_nav_menu(
@@ -73,16 +73,16 @@
 								'container_class' => 'footer-menu-container',
 								'items_wrap'      => '<ul class="%2$s mt-4 space-y-4">%3$s</ul>',
 								'fallback_cb'     => false,
-								'echo' => false,
+								'echo'            => false,
 							)
 						),
 					);
 					foreach ( $footer_menus as $location => $menu_content ) {
 						$menu_slug_location = sanitize_title( $location );
-						$menu_name = wp_get_nav_menu_name( $menu_slug_location );
+						$menu_name          = wp_get_nav_menu_name( $menu_slug_location );
 
 						if ( ! empty( $menu_content ) ) {
-						?>
+							?>
 						<div class="md:grid md:grid-cols-2 grid-cols-1 md:gap-8">
 							<div class="md:block hidden pb-sm-hidden"></div>
 							<div class="mt-12 md:mt-0">
@@ -92,14 +92,14 @@
 								<?php echo $menu_content; ?>
 							</div>
 						</div>
-						<?php
+							<?php
 						} else {
 							?>
 							<p>Please go to <strong>Appearance -> Menus</strong> to create or assign a menu to location <strong><?php echo esc_html( $location ); ?></strong></p>
 							<?php
 						}
 					}
-				?>
+					?>
 			</div>
 			</div>
 			<div class="mt-12 border-t border-gray-200 pt-8">
