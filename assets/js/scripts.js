@@ -52,7 +52,11 @@
 		}
 
 		function calcBillingCost(value) {
+			let fixedPrice = 39;
 			if (value > 0) {
+				if ( value <= 20 ) {
+					return fixedPrice;
+				}
 				let priceSettings = [
 					{
 						limitOrder: 20,
@@ -75,7 +79,7 @@
 						price: 0.1
 					}
 				];
-				let fixedPrice = 39;
+				
 				let totalPrice = 0;
 				let countOrder = 0;
 				let totalOrder = 0;
