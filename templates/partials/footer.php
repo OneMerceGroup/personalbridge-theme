@@ -51,6 +51,13 @@ if ( ! is_page_template( 'templates/frontpage-template.php' ) ) {
 					</svg>
 				</a>
 
+				<a href="https://www.youtube.com/channel/UCANC566iEL-1ecyQ9uQ-gyQ" target="_blank" class="text-gray-400 hover:text-gray-500">
+					<span class="sr-only">Youtube Chanel</span>
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="24px" viewBox="0 0 28 24" version="1.1">
+						<path d="M10 9.333l5.333 2.662-5.333 2.672v-5.334zm14-4.333v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4 7c-.02-4.123-.323-5.7-2.923-5.877-2.403-.164-7.754-.163-10.153 0-2.598.177-2.904 1.747-2.924 5.877.02 4.123.323 5.7 2.923 5.877 2.399.163 7.75.164 10.153 0 2.598-.177 2.904-1.747 2.924-5.877z" fill="currentColor" fill-rule="nonzero"/>
+					</svg>
+				</a>
+
 				</div>
 			</div>
 			<div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">

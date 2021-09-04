@@ -131,7 +131,7 @@ get_header();
 <div id="features" class="bg-indigo-50">
 	<?php
 		$feature_label = 'Customers customize — And buy! Personalized products from your store';
-		$feature_desc  = "Let's customers personalize any product and visualize how they’ll look before checking out. PersonalBridge automates your work by integrating with your favorite fulfillment services: CustomCat, Gearment, Dreamship, ScalablePress, Merchize.";
+		$feature_desc  = "Let your customers customize any product and visualize how they’ll look before checking out. PersonalBridge automates your work by integrating with your favorite fulfillment services: CustomCat, Gearment, Dreamship, ScalablePress, Merchize.";
 
 		$backend_features = array(
 			array(
@@ -185,7 +185,7 @@ get_header();
 			<h2 class="text-2xl px-4 leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center">
 				<?php echo $feature_label; ?>
 			</h2>
-			<p class="mt-4 px-4 max-w-4xl mx-auto text-md text-gray-500 text-center text-base sm:text-xl lg:text-lg xl:text-xl">
+			<p class="mt-4 px-4 max-w-7xl mx-auto text-md text-gray-500 text-center text-base sm:text-xl lg:text-lg xl:text-xl">
 				<?php echo $feature_desc; ?>
 			</p>
 		</div>
@@ -345,24 +345,41 @@ get_header();
 		</div>
 	  </div>
 	  <div class="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
-		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-		  <img class="max-w-12" src="https://customcat.com/wp-content/uploads/2020/08/CC_Logo_2020_Horizontal_EYS-e1598347452413.png" alt="Customcat">
-		</div>
-		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-		  <img class="max-w-12" src="https://cdn2.hubspot.net/hub/3942223/hubfs/Scalable%20Press%20November2017/image/scalablepress_logo-Scalable-Black.png" alt="ScalablePress">
-		</div>
-		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-		  <img class="" src="https://gearment.com/gearment/themes/gearment/assets/images/logo_gearment.png" alt="Gearment">
-		</div>
-		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-		  <img class="max-w-12" src="https://merchize.com/wp-content/uploads/2021/04/logo_retina.png" alt="Merchize">
-		</div>
-		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
-		  <img class="max-w-12" src="https://assets.inkgo.io/img/logo/dreamship.svg" alt="Dreamship">
-		</div>
-		<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
+		<?php
+			$fulfillments = array(
+				array (
+					'name' => 'Customcat',
+					'logo' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/fulfillments/customcat.png',
+				),
+				array (
+					'name' => 'ScalablePress',
+					'logo' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/fulfillments/scalablepress.png',
+				),
+				array (
+					'name' => 'Gearment',
+					'logo' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/fulfillments/gearment.png',
+				),
+				array (
+					'name' => 'Merchize',
+					'logo' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/fulfillments/merchize.png',
+				),
+				array (
+					'name' => 'Dreamship',
+					'logo' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/fulfillments/dreamship.svg',
+				),
+			);
+
+			foreach ( $fulfillments as $fulfillment ) {
+				?>
+				<div class="col-span-1  justify-center py-8 px-8 bg-gray-50">
+					<img class="max-w-12" src="<?php echo esc_url( $fulfillment['logo'] ); ?>" alt="<?php echo esc_attr( $fulfillment['name'] ); ?>">
+				</div>
+				<?php
+			}
+		?>
+		<div class="col-span-1 justify-center py-8 px-8 bg-gray-50 items-center inline-flex">
 		  <div class="text-sm text-gray-500">More coming soon!</div>
-		</div>
+		</div> 
 	  </div>
 	</div>
   </div>
