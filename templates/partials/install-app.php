@@ -25,7 +25,7 @@
 				
 				<form action="#" method="GET" class="mt-3 sm:flex">
 					<label for="shopify_store_domain" class="sr-only">Your Shopify domain</label>
-					<input type="text" name="shopify_store_domain" id="shopify_store_domain" class="shop-domain block w-full py-3 px-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300" placeholder="https://store_name.myshopify.com" required>
+					<input type="text" name="shopify_store_domain" id="shopify_store_domain" class="shop-domain block w-full py-3 px-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 border focus:border-indigo-500 sm:flex-1 border-gray-300" placeholder="https://store_name.myshopify.com" required>
 					<button type="submit" id="install-shopify-app" class="install-shop-app mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto">
 					Install
 					</button>
@@ -39,7 +39,7 @@
 				
 				<form action="#" method="GET" class="mt-3 sm:flex">
 					<label for="shopbase_store_domain" class="sr-only">Your Shopbase domain</label>
-					<input type="text" name="shopbase_store_domain" id="shopbase_store_domain" class="shop-domain block w-full py-3 px-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300" placeholder="https://store_name.onshopbase.com" required>
+					<input type="text" name="shopbase_store_domain" id="shopbase_store_domain" class="shop-domain block w-full py-3 px-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 border focus:border-indigo-500 sm:flex-1 border-gray-300" placeholder="https://store_name.onshopbase.com" required>
 					<button type="submit" id="install-shopbase-app" class="install-shop-app mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto">
 					Install
 					</button>

@@ -386,7 +386,7 @@ get_header();
 	</div>
   </div>
   <div class="mt-8 bg-white pb-16 sm:mt-12 sm:pb-20 lg:pb-28">
-	<div class="relative">
+	<div class="relative transition-all">
 	  <div class="absolute inset-0 h-1/2 bg-gray-100"></div>
 	  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
@@ -394,11 +394,25 @@ get_header();
 			<h3 class="text-2xl font-extrabold text-gray-900 sm:text-3xl">
 				PAY AS YOU GO
 			</h3>
-			<p class="mt-6 text-base text-gray-500">
-				Simple usage based pricing with no long term commitments.
-			</p>
+			<div class="mt-6 overflow-hidden">
+				<p class="text-base text-gray-500 lg:float-left estimate-cost-desc">
+					Simple usage based pricing with no long term commitments.
+				</p>
+				<p id="action-estimate-cost" class="mt-4 lg:mt-0 text-right text-base text-indigo-600 lg:float-right cursor-pointer">
+					<span class="inline-flex items-center text-indigo-600 ">	
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+						</svg>
+						<span class="ml-1">Estimate your cost</span>
+					</span>
+				</p>
+			</div>
+			
 			<div class="mt-8">
 			  <div class="flex items-center">
+				<div id="box-calc-cost" class="hidden flex-none block w-full"> 
+					<input type="number" id="calc-total-cost" min="1" max="9999999" onkeyup="this.value=this.value.replace(/[^\d]/,'')" class="shop-domain block w-full py-3 px-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border border-gray-300" placeholder="Enter your average number per month"/>
+				</div>
 				<div class="flex-1 border-t-2 border-gray-200"></div>
 			  </div>
 			  <ul role="list" class="mt-8 space-y-5 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-5">
@@ -480,7 +494,7 @@ get_header();
 		  </div>
 		  <div class="py-8 px-6 bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
 			<div class="flex items-center justify-center text-5xl font-extrabold text-gray-900">
-			  <span>
+			  <span id="pb-app-pricing">
 				$39
 			  </span>
 			  <span class="ml-3 text-xl font-medium text-gray-500">
