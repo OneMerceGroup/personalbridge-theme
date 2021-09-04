@@ -325,12 +325,20 @@ get_header();
 		</p>
 		<div class="mt-8 sm:flex">
 		  <div class="rounded-md shadow">
-			<a href="#" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+			<a href="https://dashboard.personalbridge.com/register" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
 			  Create Account
 			</a>
 		  </div>
 		  <div class="mt-3 sm:mt-0 sm:ml-3">
-			<a href="#" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200">
+			<?php
+				$contactus_url     = '#';
+				$get_contactus_url = get_permalink( get_page_by_path( 'contact-us' ) );
+			if ( ! empty( $get_contactus_url ) ) {
+				$contactus_url = $get_contactus_url;
+			}
+
+			?>
+			<a href="<?php echo esc_url( $contactus_url ); ?>" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200">
 			  Contact Us
 			</a>
 		  </div>
@@ -481,12 +489,13 @@ get_header();
 			</div>
 			<p class="mt-4 text-sm font-medium">Plus transaction fee:</p>
 			<p class="mt-2 text-sm text-gray-500">Free transaction fee for first 20 orders</p>
-			<p class="mt-2 text-sm text-gray-500">$0.4 transaction fee up to 1.000 orders</p>
-			<p class="mt-2 text-sm text-gray-500">$0.2 transaction fee up to 5.000 orders</p>
-			<p class="mt-2 text-sm text-gray-500">$0.1 transaction fee from 5.000 and above.</p>
+			<p class="mt-2 text-sm text-gray-500">$0.4 transaction fee up to 200 orders</p>
+			<p class="mt-2 text-sm text-gray-500">$0.3 transaction fee up to 1,000 orders</p>
+			<p class="mt-2 text-sm text-gray-500">$0.2 transaction fee up to 5,000 orders</p>
+			<p class="mt-2 text-sm text-gray-500">$0.1 transaction fee from 5.001 orders and above.</p>
 			<div class="mt-6">
 			  <div class="rounded-md shadow">
-				<a href="#" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900">
+				<a href="https://dashboard.personalbridge.com" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900">
 				  Get Started
 				</a>
 			  </div>
