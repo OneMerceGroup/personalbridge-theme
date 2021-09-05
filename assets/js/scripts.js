@@ -168,8 +168,13 @@
 							targetDom.focus();
 						}, 5000);
 					} else {
-						targetURL = targetURL.replace('https://', '');
+						if ( targetURL.includes( 'https://' ) ) {
+							targetURL = targetURL.replace('https://', '');
+						}
 						targetURL = targetURL.replace('[DOMAIN]', getDomain);
+						if ( targetURL.indexOf( 'https://' ) > 0 ) {
+							targetURL = 'https://' + targetURL;
+						}
 						window.location.href = targetURL;
 					}
 					targetDom.val('');

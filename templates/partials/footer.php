@@ -1,6 +1,6 @@
 <?php
 	$footer_bg_class = 'bg-white';
-if ( ! is_page_template( 'templates/frontpage-template.php' ) ) {
+if ( ! is_page_template( 'templates/frontpage-template.php' ) && ! is_404() ) {
 	$footer_bg_class = 'bg-gray-50';
 	?>
 			</div><!-- #content -->

@@ -10,7 +10,7 @@
 	<?php wp_body_open(); ?>
 
 	<?php
-	if ( ! is_page_template( 'templates/frontpage-template.php' ) ) {
+	if ( ! is_page_template( 'templates/frontpage-template.php' ) && ! is_404() ) {
 		?>
 			<div class="site">
 				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'personalbridge' ); ?></a>
