@@ -131,7 +131,7 @@ get_header();
 <div id="features" class="bg-indigo-50">
 	<?php
 		$feature_label = 'Customers customize — And buy! Personalized products from your store';
-		$feature_desc  = "Let your customers customize any product and visualize how they’ll look before checking out. PersonalBridge automates your work by integrating with your favorite fulfillment services: CustomCat, Gearment, Dreamship, ScalablePress, Merchize.";
+		$feature_desc  = 'Let your customers customize any product and visualize how they’ll look before checking out. PersonalBridge automates your work by integrating with your favorite fulfillment services: CustomCat, Gearment, Dreamship, ScalablePress, Merchize.';
 
 		$backend_features = array(
 			array(
@@ -347,23 +347,23 @@ get_header();
 	  <div class="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
 		<?php
 			$fulfillments = array(
-				array (
+				array(
 					'name' => 'Customcat',
 					'logo' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/fulfillments/customcat.png',
 				),
-				array (
+				array(
 					'name' => 'ScalablePress',
 					'logo' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/fulfillments/scalablepress.png',
 				),
-				array (
+				array(
 					'name' => 'Gearment',
 					'logo' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/fulfillments/gearment.png',
 				),
-				array (
+				array(
 					'name' => 'Merchize',
 					'logo' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/fulfillments/merchize.png',
 				),
-				array (
+				array(
 					'name' => 'Dreamship',
 					'logo' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/fulfillments/dreamship.svg',
 				),
@@ -376,7 +376,7 @@ get_header();
 				</div>
 				<?php
 			}
-		?>
+			?>
 		<div class="col-span-1 justify-center py-8 px-8 bg-gray-50 items-center inline-flex">
 		  <div class="text-sm text-gray-500">More coming soon!</div>
 		</div> 
@@ -441,7 +441,7 @@ get_header();
 					</svg>
 				  </div>
 				  <p class="ml-3 text-sm text-gray-700">
-					14 day free trial
+					14 days free trial
 				  </p>
 				</li>
 
