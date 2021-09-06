@@ -277,4 +277,16 @@ Text Domain: personalbridge
 	.estimate-cost-desc {
 		max-width: calc(100% - 160px);
 	}
+	
 }
+
+@media only screen and (min-width: 1280px) {
+	.pb-w-275 {
+		flex-basis: 275px;
+	}
+}
+
+#box-calc-cost.hidden {
+	display: none!important;
+}
+

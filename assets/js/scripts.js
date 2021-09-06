@@ -8,10 +8,12 @@
 			$('#box-calc-cost').toggleClass('hidden');
 			if ( $('#box-calc-cost').hasClass('hidden') ) {
 				$(this).html('<span class="inline-flex items-center text-indigo-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg><span class="ml-1">Estimate your cost</span></span>');
-				$('#pb-app-pricing').text('$39');
+				
 			} else {
 				$(this).html('<div><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>');
 				$('#calc-total-cost').val('').focus();
+				$('#pb-app-pricing').val('');
+				$('#box-calc-result').addClass('hidden');
 			}
 			
 		});
@@ -43,6 +45,7 @@
 			if ( totalOrder > 0 ) {
 				var cost = calcBillingCost(totalOrder);
 				if ( cost > 0 ) {
+					$('#box-calc-result').removeClass('hidden');
 					var boxPricingVal = $('#pb-app-pricing');
 					if ( boxPricingVal.length > 0 ) {
 						boxPricingVal.html( '$' + cost ); 

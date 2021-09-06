@@ -427,8 +427,12 @@ get_header();
 			
 			<div class="mt-8">
 			  <div class="flex items-center">
-				<div id="box-calc-cost" class="hidden flex-none block w-full"> 
-					<input type="number" id="calc-total-cost" min="1" max="9999999" onkeyup="this.value=this.value.replace(/[^\d]/,'')" class="shop-domain block w-full py-3 px-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border border-gray-300" placeholder="Enter your average number per month"/>
+				<div id="box-calc-cost" class="hidden xl:inline-flex xl:items-center w-full justify-between"> 
+					<input type="number" id="calc-total-cost" min="1" max="9999999" onkeyup="this.value=this.value.replace(/[^\d]/,'')" class="shop-domain py-3 px-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 w-full pb-w-275" placeholder="Enter your average order/month"/>
+					<div class="inline-flex items-center justify-between hidden my-4 xl:my-0" id="box-calc-result">
+						<span>Pay as you go</span>
+						<span id="pb-app-pricing" class="text-4xl font-extrabold text-gray-900 ml-4"></span>
+					</div>
 				</div>
 				<div class="flex-1 border-t-2 border-gray-200"></div>
 			  </div>
@@ -441,7 +445,7 @@ get_header();
 					</svg>
 				  </div>
 				  <p class="ml-3 text-sm text-gray-700">
-					14 days free trial
+					90 days free trial
 				  </p>
 				</li>
 
@@ -511,7 +515,7 @@ get_header();
 		  </div>
 		  <div class="py-8 px-6 bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
 			<div class="flex items-center justify-center text-5xl font-extrabold text-gray-900">
-			  <span id="pb-app-pricing">
+			  <span>
 				$39
 			  </span>
 			  <span class="ml-3 text-xl font-medium text-gray-500">
