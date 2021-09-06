@@ -1,13 +1,13 @@
-<?php 
+<?php
 	$footer_bg_class = 'bg-white';
-	if ( ! is_page_template( 'templates/frontpage-template.php' ) ) {
-		$footer_bg_class = 'bg-gray-50';
-		?>
+if ( ! is_page_template( 'templates/frontpage-template.php' ) && ! is_404() ) {
+	$footer_bg_class = 'bg-gray-50';
+	?>
 			</div><!-- #content -->
 		</div><!-- .site -->
-		<?php
-	}
-	?>
+	<?php
+}
+?>
 
 	<!-- This example requires Tailwind CSS v2.0+ -->
 
@@ -22,7 +22,7 @@
 				</p>
 				<div class="flex space-x-6">
 
-				<a href="#" class="text-gray-400 hover:text-gray-500">
+				<a href="https://www.facebook.com/PersonalBridge" target="_blank" class="text-gray-400 hover:text-gray-500">
 					<span class="sr-only">Facebook Fanpage</span>
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 						<title>fb 3@1x</title>
@@ -37,7 +37,7 @@
 					</svg>
 				</a>
 
-				<a href="#" class="text-gray-400 hover:text-gray-500">
+				<a href="https://www.facebook.com/groups/1440391576391257" target="_blank" class="text-gray-400 hover:text-gray-500">
 					<span class="sr-only">Facebook Local Group</span>
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="22px" viewBox="0 0 19 22" version="1.1">
 						<title>fb 2@1x</title>
@@ -48,6 +48,13 @@
 								</g>
 							</g>
 						</g>
+					</svg>
+				</a>
+
+				<a href="https://www.youtube.com/channel/UCANC566iEL-1ecyQ9uQ-gyQ" target="_blank" class="text-gray-400 hover:text-gray-500">
+					<span class="sr-only">Youtube Chanel</span>
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="24px" viewBox="0 0 28 24" version="1.1">
+						<path d="M10 9.333l5.333 2.662-5.333 2.672v-5.334zm14-4.333v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4 7c-.02-4.123-.323-5.7-2.923-5.877-2.403-.164-7.754-.163-10.153 0-2.598.177-2.904 1.747-2.924 5.877.02 4.123.323 5.7 2.923 5.877 2.399.163 7.75.164 10.153 0 2.598-.177 2.904-1.747 2.924-5.877z" fill="currentColor" fill-rule="nonzero"/>
 					</svg>
 				</a>
 
@@ -63,7 +70,7 @@
 								'container_class' => 'footer-menu-container',
 								'items_wrap'      => '<ul class="%2$s mt-4 space-y-4">%3$s</ul>',
 								'fallback_cb'     => false,
-								'echo' => false,
+								'echo'            => false,
 							)
 						),
 						'Footer Menu 2' => wp_nav_menu(
@@ -73,16 +80,16 @@
 								'container_class' => 'footer-menu-container',
 								'items_wrap'      => '<ul class="%2$s mt-4 space-y-4">%3$s</ul>',
 								'fallback_cb'     => false,
-								'echo' => false,
+								'echo'            => false,
 							)
 						),
 					);
 					foreach ( $footer_menus as $location => $menu_content ) {
 						$menu_slug_location = sanitize_title( $location );
-						$menu_name = wp_get_nav_menu_name( $menu_slug_location );
+						$menu_name          = wp_get_nav_menu_name( $menu_slug_location );
 
 						if ( ! empty( $menu_content ) ) {
-						?>
+							?>
 						<div class="md:grid md:grid-cols-2 grid-cols-1 md:gap-8">
 							<div class="md:block hidden pb-sm-hidden"></div>
 							<div class="mt-12 md:mt-0">
@@ -92,14 +99,14 @@
 								<?php echo $menu_content; ?>
 							</div>
 						</div>
-						<?php
+							<?php
 						} else {
 							?>
 							<p>Please go to <strong>Appearance -> Menus</strong> to create or assign a menu to location <strong><?php echo esc_html( $location ); ?></strong></p>
 							<?php
 						}
 					}
-				?>
+					?>
 			</div>
 			</div>
 			<div class="mt-12 border-t border-gray-200 pt-8">

@@ -39,11 +39,11 @@ add_action( 'after_setup_theme', 'personalbridge_setup' );
 add_action(
 	'wp_enqueue_scripts',
 	function () {
-		wp_enqueue_style( 'personalbridge-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'personalbridge-style', get_stylesheet_uri(), array(), '0.0.1.2' );
 		wp_enqueue_style( 'tailwind', get_template_directory_uri() . '/assets/css/tailwind.css', array(), '2.2.7' );
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'alpine', get_template_directory_uri() . '/assets/js/alpine.js', array(), '0.01', true );
-		wp_enqueue_script( 'scripts', get_template_directory_uri() . '/assets/js/scripts.js', array(), '0.01', true );
+		wp_enqueue_script( 'scripts', get_template_directory_uri() . '/assets/js/scripts.js', array(), '0.0.1.2', true );
 	}
 );
 
@@ -69,3 +69,14 @@ add_filter(
 	100,
 	4
 );
+
+function personalbridge_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'personalbridge_custom_excerpt_length', 999 );
+
+function personalbridge_excerpt_more( $more ) {
+    return '...';
+}
+add_filter( 'excerpt_more', 'personalbridge_excerpt_more' );
+
