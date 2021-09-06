@@ -153,6 +153,8 @@
 			if (targetDom) {
 				var getDomain = targetDom.val();
 				if (getDomain.length > 0) {
+					getDomain = stripTrailingSlash( getDomain );
+					//console.log('getDomain: ', getDomain);
 					var domainContains = 'myshopify.com';
 					var targetURL = 'https://[DOMAIN]/admin/oauth/authorize?client_id=f413b83913bfd2684978a7f9969b6cbb&scope=read_script_tags,write_script_tags,read_products,write_products,read_product_listings,read_collection_listings,read_orders,write_orders,read_customers,read_themes,write_themes,read_content,read_fulfillments,write_fulfillments,write_merchant_managed_fulfillment_orders,read_shipping,write_shipping,read_discounts,write_discounts,read_inventory&redirect_uri=https://api.personalbridge.com/auth_callback/shopify&state=none';
 					if ( 'shopbase' == target ) {
@@ -197,6 +199,13 @@
 				}, 650);
 			}
 		});
+
+		function stripTrailingSlash(str) {
+			if(str.substr(-1) === '/') {
+				return str.substr(0, str.length - 1);
+			}
+			return str;
+		}
 
 		function featured_scroll() {
 			var blockText = $('.featurescroll .block-text')
