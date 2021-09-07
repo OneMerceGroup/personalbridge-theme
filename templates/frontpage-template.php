@@ -27,7 +27,7 @@ get_header();
 		  <div class="flex items-center justify-between w-full md:w-auto">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 			  <span class="sr-only">PersonalBridge</span>
-			  <img class="h-8 w-auto sm:h-10" src="https://p198.p4.n0.cdn.getcloudapp.com/items/mXurb4Dx/1de29d3c-40a1-4368-994e-5a035eea02a7.png" alt="">
+			  <img class="h-8 w-auto sm:h-10" src="https://personalbridge.sgp1.digitaloceanspaces.com/fulfillments/logo.png" alt="">
 			</a>
 			<div class="-mr-2 flex items-center md:hidden">
 			  <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" @click="toggle" @mousedown="if (open) $event.preventDefault()" aria-expanded="false" :aria-expanded="open.toString()">
@@ -66,7 +66,7 @@ get_header();
 		<div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
 		  <div class="px-5 pt-4 flex items-center justify-between">
 			<div>
-			  <img class="h-8 w-auto" src="https://p198.p4.n0.cdn.getcloudapp.com/items/mXurb4Dx/1de29d3c-40a1-4368-994e-5a035eea02a7.png" alt="">
+			  <img class="h-8 w-auto" src="https://personalbridge.sgp1.digitaloceanspaces.com/fulfillments/logo.png" alt="">
 			</div>
 			<div class="-mr-2">
 			  <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" @click="toggle">
@@ -116,7 +116,7 @@ get_header();
 		  <div class="relative mx-auto w-full rounded-lg shadow-lg">
 				<!--<div class="embed-youtube"><iframe width="592" height="300" src="https://www.youtube.com/embed/eud-ubKwlqE?autoplay=1" allow="autoplay" frameborder="0" allowfullscreen></iframe></div> -->
 				<video width="100%" height="100%" loop="" muted="" autoplay="" playsinline="" controls="">
-					<source src="https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/pb-video-demo-hd.mp4" type="video/mp4">
+					<source src="https://personalbridge.sgp1.digitaloceanspaces.com/pb-video-demo-hd.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
 		  </div>
@@ -137,27 +137,27 @@ get_header();
 			array(
 				'label' => 'Upload cliparts from folder',
 				'desc'  => 'Upload and manage settings of all clipart images easily and quickly with uploading nested folders.',
-				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/upload-cliaprt-by-folder.jpg',
+				'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/upload-cliaprt-by-folder.jpg',
 			),
 			array(
 				'label' => 'Create mockup from PSD',
 				'desc'  => 'Create your own mockup quickly by importing PSD files. Easily edit and display artwork on product mockup in your own style.',
-				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/create-mockup.png',
+				'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/create-mockup.png',
 			),
 			array(
 				'label' => 'Artwork Templates from PSD',
 				'desc'  => 'Powerful artwork editor to help you create design and manage personalization settings. Re-use artwork for multiple POD products and campaigns. Automatically create templates based on PSD file structure.',
-				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/artwork.png',
+				'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/artwork.png',
 			),
 			array(
 				'label' => 'Auto fulfill with fulfillment services',
 				'desc'  => 'Automate fulfillment with your favorite fulfillments. Automatic create file design file base on the selection of your customer. You can download file print or automatically send orders to your fulfillment service.',
-				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/order-auto-fulfill.png',
+				'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/order-auto-fulfill.png',
 			),
 			array(
 				'label' => 'Create your own product catalog',
 				'desc'  => 'Import product catalog from your favorite provider with just one click or add product catalog from any provider manually with no limitation.',
-				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/create-catalog.png',
+				'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/create-catalog.png',
 			),
 		);
 
@@ -165,17 +165,17 @@ get_header();
 			array(
 				'label' => 'Customizations',
 				'desc'  => 'Customers changes clipart, enter text or can upload their own images and use them to create uniquely personal products. Your customer only need change and buy.',
-				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/unlimited-customization.png',
+				'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/unlimited-customization.png',
 			),
 			array(
 				'label' => 'Conditional Logic',
 				'desc'  => 'Conditional logic lets you show and hide options depending on the value of previous options.',
-				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/conditional-logic.png',
+				'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/conditional-logic.png',
 			),
 			array(
 				'label' => 'Live Preview',
 				'desc'  => 'PersonalBridge allows you to configure a live preview image that will automatically get updated when your customers will change their selection.',
-				'image' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/live-preview.png',
+				'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/live-preview.png',
 			),
 		);
 
@@ -349,23 +349,23 @@ get_header();
 			$fulfillments = array(
 				array(
 					'name' => 'Customcat',
-					'logo' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/fulfillments/customcat.png',
+					'logo' => 'https://personalbridge.sgp1.digitaloceanspaces.com/fulfillments/customcat.png',
 				),
 				array(
 					'name' => 'ScalablePress',
-					'logo' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/fulfillments/scalablepress.png',
+					'logo' => 'https://personalbridge.sgp1.digitaloceanspaces.com/fulfillments/scalablepress.png',
 				),
 				array(
 					'name' => 'Gearment',
-					'logo' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/fulfillments/gearment.png',
+					'logo' => 'https://personalbridge.sgp1.digitaloceanspaces.com/fulfillments/gearment.png',
 				),
 				array(
 					'name' => 'Merchize',
-					'logo' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/fulfillments/merchize.png',
+					'logo' => 'https://personalbridge.sgp1.digitaloceanspaces.com/fulfillments/merchize.png',
 				),
 				array(
 					'name' => 'Dreamship',
-					'logo' => 'https://pmmedia.nyc3.digitaloceanspaces.com/personalbridge/fulfillments/dreamship.svg',
+					'logo' => 'https://personalbridge.sgp1.digitaloceanspaces.com/fulfillments/dreamship.svg',
 				),
 			);
 

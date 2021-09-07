@@ -16,7 +16,7 @@ if ( ! is_page_template( 'templates/frontpage-template.php' ) && ! is_404() ) {
 		<div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
 			<div class="xl:grid xl:grid-cols-3 xl:gap-8">
 			<div class="space-y-8 xl:col-span-1">
-				<img class="h-10" src="https://p198.p4.n0.cdn.getcloudapp.com/items/mXurb4Dx/1de29d3c-40a1-4368-994e-5a035eea02a7.png" alt="PersonalBridge">
+				<img class="h-10" src="https://personalbridge.sgp1.digitaloceanspaces.com/fulfillments/logo.png" alt="PersonalBridge">
 				<p class="text-gray-500 text-base">
 				Making better ecommerce user experience with the best tools for personalized products.
 				</p>
