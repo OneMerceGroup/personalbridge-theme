@@ -12,9 +12,10 @@
 				</a>
 				<a href="#" data-tab_id="shopbase-app" class="pb-tab-label border-transparent text-gray-500 hover:text-indigo-700 hover:border-indigo-600 group inline-flex items-center py-4 px-1 border-b-2 font-medium text-sm">
 					<!-- Heroicon name: solid/office-building -->
-					
-					<svg class="text-gray-400 group-hover:text-indigo-700 -ml-0.5 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-						<path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+					<svg class="text-gray-400 group-hover:text-indigo-700 -ml-0.5 mr-2 h-5 w-5"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10pt" height="10pt" viewBox="0 0 10 10" version="1.1" fill="currentColor" aria-hidden="true">
+						<path style="fill-opacity:0.7;" d="M 0 8.332031 L 10 8.332031 C 10 9.253906 9.253906 10 8.332031 10 L 1.667969 10 C 0.746094 10 0 9.253906 0 8.332031 Z M 0 8.332031 "/>
+						<path style="" d="M 7.863281 0 C 8.605469 0 8.875 0.078125 9.148438 0.222656 C 9.414062 0.363281 9.636719 0.585938 9.777344 0.851562 C 9.925781 1.125 10 1.394531 10 2.136719 L 10 8.332031 L 0 8.332031 L 0 2.136719 C 0 1.394531 0.078125 1.125 0.222656 0.851562 C 0.363281 0.585938 0.585938 0.363281 0.851562 0.222656 C 1.125 0.078125 1.394531 0 2.136719 0 Z M 7.863281 0 "/>
+						<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 2.417969 2.519531 L 1.816406 2.742188 C 1.679688 2.792969 1.632812 2.886719 1.695312 3.027344 C 2.269531 4.375 3.351562 5.09375 5.003906 5.09375 C 6.65625 5.09375 7.734375 4.378906 8.308594 3.03125 C 8.371094 2.886719 8.308594 2.785156 8.1875 2.742188 L 7.585938 2.519531 C 7.464844 2.472656 7.367188 2.519531 7.300781 2.667969 C 6.890625 3.585938 6.191406 4.023438 5.003906 4.023438 C 3.8125 4.023438 3.113281 3.585938 2.703125 2.660156 C 2.644531 2.539062 2.570312 2.460938 2.417969 2.519531 Z M 2.417969 2.519531 "/>
 					</svg>
 					<span>Shopbase</span>
 				</a>
