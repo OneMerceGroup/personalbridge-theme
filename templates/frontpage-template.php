@@ -542,6 +542,81 @@ get_header();
   </div>
 </div>
 
+<div class="bg-gray-900">
+  <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+	<div class="space-y-12">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center">
+				<h2 class="text-3xl text-white font-extrabold sm:text-4xl lg:text-5xl">
+				Meet our team
+				</h2>
+				<p class="mt-4 text-xl text-gray-600">
+				These are the people that make the magic happen.
+				</p>
+			</div>
+		</div>
+		<ul role="list" class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-4 lg:gap-8">
+			<?php
+			$teams = array(
+				array(
+					'name' => 'Simon Vu',
+					'position' => 'CEO, Co-Founder',
+					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/simon-vu-avatar.jpg',
+				),
+				array(
+					'name' => 'Cong Nguyen',
+					'position' => 'CTO, Co-Founder',
+					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/cong-nguyen-avatar.jpg',
+				),
+				array(
+					'name' => 'Jimmy Nguyen',
+					'position' => 'CTO, Co-Founder',
+					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/jimmy-nguyen-avatar.jpg',
+				),
+				array(
+					'name' => 'Nhat Hoang',
+					'position' => 'Senior Developer',
+					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/nhat-hoang-avatar.jpg',
+				),
+				array(
+					'name' => 'Huy Le',
+					'position' => 'Senior Developer',
+					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/huy-le-avatar.jpg',
+				),
+				array(
+					'name' => 'Thien Nguyen',
+					'position' => 'Engineering',
+					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/thien-nguyen-avatar.jpg',
+				),
+				array(
+					'name' => 'Trang Doan',
+					'position' => 'Engineering',
+					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/trang-doan-avatar.jpg',
+				),
+				array(
+					'name' => 'Truong Tuyen',
+					'position' => 'UX Architect',
+					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/truong-tuyen-avatar.jpg',
+				),
+			);
+			foreach ( $teams as $member ) {
+				?>
+				<li class="py-10 px-6 bg-gray-800 text-center xl:px-10">
+					<div class="space-y-6 xl:space-y-10">
+						<img class="mx-auto h-auto w-40 rounded-full" src="<?php echo esc_url( $member['image'] ); ?>" alt="">
+						<div class="font-medium text-lg leading-6 space-y-1 text-center">
+							<h3 class="text-white"><?php echo esc_html( $member['name'] ); ?></h3>
+							<p class="text-indigo-400"><?php echo esc_html( $member['position'] ); ?></p>
+						</div>
+					</div>
+				</li>
+			<?php } ?>
+			<!-- More people... -->
+		</ul>
+	</div>
+  </div>
+</div>
+
 <!-- FAQs -->
 
 <!-- This example requires Tailwind CSS v2.0+ -->
