@@ -22,7 +22,7 @@ if ( ! is_page_template( 'templates/frontpage-template.php' ) && ! is_404() ) {
 				</p>
 
 				<div class="text-gray-500 text-base">
-					<strong>Address:</strong> 51 Xô Viết Nghệ Tĩnh, Hòa Cường Nam, Hải Châu, Đà Nẵng 
+					<strong>Address:</strong> 51 Xô Viết Nghệ Tĩnh, Hoà Cường Nam, Hải Châu, Đà Nẵng, Vietnam.
 				</div>
 
 				<div class="flex space-x-6">
