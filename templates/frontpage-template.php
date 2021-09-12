@@ -326,23 +326,13 @@ get_header();
 		<div class="mt-8 sm:flex">
 		  <div class="rounded-md shadow">
 			<a href="https://dashboard.personalbridge.com/register" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
-			  Create Account
-			</a>
-		  </div>
-		  <div class="mt-3 sm:mt-0 sm:ml-3">
-			<?php
-				$contactus_url     = '#';
-				$get_contactus_url = get_permalink( get_page_by_path( 'contact-us' ) );
-			if ( ! empty( $get_contactus_url ) ) {
-				$contactus_url = $get_contactus_url;
-			}
-
-			?>
-			<a href="<?php echo esc_url( $contactus_url ); ?>" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200">
-			  Contact Us
+			  Create A Free Account
 			</a>
 		  </div>
 		</div>
+        <p class="mt-3 max-w-3xl text-sm text-gray-500">
+        Personalbridge app also provide custom order CSV with ready-to-print files for other fulfillments such as Printify, Printful ...
+        </p>
 	  </div>
 	  <div class="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
 		<?php
