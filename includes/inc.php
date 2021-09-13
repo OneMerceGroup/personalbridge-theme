@@ -39,12 +39,12 @@ add_action( 'after_setup_theme', 'personalbridge_setup' );
 add_action(
 	'wp_enqueue_scripts',
 	function () {
-		wp_enqueue_style( 'personalbridge-style', get_stylesheet_uri(), array(), '0.0.1.6' );
+		wp_enqueue_style( 'personalbridge-style', get_stylesheet_uri(), array(), '0.0.1.7' );
 		wp_enqueue_style( 'tailwind', get_template_directory_uri() . '/assets/css/tailwind.css', array(), '2.2.7' );
 		wp_enqueue_style( 'theme-custom', get_template_directory_uri() . '/assets/css/custom.css', array(), '0.1' );
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'alpine', get_template_directory_uri() . '/assets/js/alpine.js', array(), '0.01', true );
-		wp_enqueue_script( 'scripts', get_template_directory_uri() . '/assets/js/scripts.js', array(), '0.0.1.6', true );
+		wp_enqueue_script( 'scripts', get_template_directory_uri() . '/assets/js/scripts.js', array(), '0.0.1.7', true );
 	}
 );
 
