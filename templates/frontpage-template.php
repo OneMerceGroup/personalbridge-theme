@@ -49,6 +49,7 @@ get_header();
 			<a href="#pricing" class="font-medium text-gray-500 hover:text-gray-900">Pricing</a>
 
 			<a href="#partners" class="font-medium text-gray-500 hover:text-gray-900">Partners</a>
+			<a href="#team" class="font-medium text-gray-500 hover:text-gray-900">Team</a>
 
 			<a href="https://support.personalbridge.com" target="_blank" class="font-medium text-gray-500 hover:text-gray-900">Helps</a>
 		  </div>
@@ -87,6 +88,8 @@ get_header();
 
 			<a href="#pricing" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Pricing</a>
 			<a href="#partners" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Partners</a>
+			<a href="#team" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Team</a>
+
 			<a href="https://support.personalbridge.com" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Helps</a>
 		  </div>
 		  <a href="https://dashboard.personalbridge.com" target="_blank" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
@@ -330,9 +333,9 @@ get_header();
 			</a>
 		  </div>
 		</div>
-        <p class="mt-3 max-w-3xl text-sm text-gray-500">
-        Personalbridge app also provide custom order CSV with ready-to-print files for other fulfillments such as Printify, Printful ...
-        </p>
+		<p class="mt-3 max-w-3xl text-sm text-gray-500">
+		Personalbridge app also provide custom order CSV with ready-to-print files for other fulfillments such as Printify, Printful ...
+		</p>
 	  </div>
 	  <div class="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
 		<?php
@@ -626,46 +629,46 @@ get_header();
 			<?php
 			$teams = array(
 				array(
-					'name' => 'Simon Vu',
+					'name'     => 'Simon Vu',
 					'position' => 'Product Manager',
-					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/simon-vu-avatar.jpg',
+					'image'    => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/simon-vu-avatar.jpg',
 				),
 				array(
-					'name' => 'Cong Nguyen',
+					'name'     => 'Cong Nguyen',
 					'position' => 'Lead Developer',
-					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/cong-nguyen-avatar.jpg',
+					'image'    => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/cong-nguyen-avatar.jpg',
 				),
 				array(
-					'name' => 'Jimmy Nguyen',
+					'name'     => 'Jimmy Nguyen',
 					'position' => 'Lead Developer',
-					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/jimmy-nguyen-avatar.jpg',
+					'image'    => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/jimmy-nguyen-avatar.jpg',
 				),
-                array(
-					'name' => 'Quang Nguyen',
+				array(
+					'name'     => 'Quang Nguyen',
 					'position' => 'Advisor',
-					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/quang-nguyen-avatar2.png',
+					'image'    => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/quang-nguyen-avatar2.png',
 				),
-                array(
-					'name' => 'Truong Tuyen',
+				array(
+					'name'     => 'Truong Tuyen',
 					'position' => 'UX Architect',
-					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/truong-tuyen-avatar.jpg',
+					'image'    => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/truong-tuyen-avatar.jpg',
 				),
 				array(
-					'name' => 'Nhat Hoang',
+					'name'     => 'Nhat Hoang',
 					'position' => 'Senior Developer',
-					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/nhat-hoang-avatar.jpg',
+					'image'    => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/nhat-hoang-avatar.jpg',
 				),
 				array(
-					'name' => 'Huy Le',
+					'name'     => 'Huy Le',
 					'position' => 'Senior Developer',
-					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/huy-le-avatar.jpg',
+					'image'    => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/huy-le-avatar.jpg',
 				),
 				array(
-					'name' => 'Trang Doan',
+					'name'     => 'Trang Doan',
 					'position' => 'Engineering',
-					'image' => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/trang-doan-avatar.jpg',
+					'image'    => 'https://personalbridge.sgp1.digitaloceanspaces.com/teams/teams/trang-doan-avatar.jpg',
 				),
-				
+
 			);
 			foreach ( $teams as $member ) {
 				?>
