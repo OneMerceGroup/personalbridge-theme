@@ -438,7 +438,7 @@ get_header();
 					</svg>
 				  </div>
 				  <p class="ml-3 text-sm text-gray-700">
-					90 days free trial
+					14 days free trial
 				  </p>
 				</li>
 
