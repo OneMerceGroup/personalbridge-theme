@@ -58,9 +58,8 @@
 			</div>
 
 			<div class="pb-tab-content hidden" data-tab_id="woocommerce-plugin">
-				
                 <p class="text-sm text-gray-500 mb-4">
-					<strong>Step 1: </strong>Install and active plugin <a class="text-indigo-600 font-semibold" href="https://personalbridge.sgp1.digitaloceanspaces.com/woocommerce-plugin/personalbridge.zip" target="_blank">PersonalBridge.zip</a> in your store.
+					<strong>Step 1: </strong>In WordPress dashboard choose <strong>Plugins -> Add New</strong> and search by keyword <strong>PersonalBridge</strong> to install and active plugin <a class="text-indigo-600 font-semibold" href="https://wordpress.org/plugins/personalbridge/" target="_blank">PersonalBridge</a> in your store.
 				</p>
 				<p class="text-sm text-gray-500 mb-4">
 					<strong>Step 2: </strong>Follow our <a class="text-indigo-600 font-semibold" href="https://support.personalbridge.com/vi/article/connect-store-moi-vao-personalbridge-app-10t3a8j/#2-connect-woocommerce-voi-personalbridge-app" target="_blank">step by step tutorial</a> on how to connect <strong>PersonalBridge</strong> with your <strong>WooCommerce</strong> store.
